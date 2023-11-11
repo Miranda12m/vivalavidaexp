@@ -15,11 +15,12 @@ function App() {
   useEffect(() => {
     AOS.init();
   }, []);
-  const [currentPage] = useState("services");
 
   return (
     <Router>
-      <Navbar height={10} currentPage={currentPage}></Navbar>
+
+            <Navbar height={10} ></Navbar>
+
       <main className="py-3">
         <Container>
           <Routes>
