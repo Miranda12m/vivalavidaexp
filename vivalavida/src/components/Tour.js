@@ -1,25 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
-import tourData from "../staticdata";
 
-function Product({ product }) {
+function Tour({ tour }) {
   return (
-    <Card className="border-success mb-3" style={{ maxWidth: "20rem" }}>
-      <div className="card-header">{tourData.name}</div>
-      <div className="card-body">
+    <Card className="my-3 p-3 rounded">
+      <Link to={`/tour/${tour.id}`}>
+        {/* Assuming you have an image property in your tour data */}
+        <Card.Img src={tour.image} alt={tour.title} />
+      </Link>
+
+      <Card.Body as="div">
         <Link to={`#`}>
           <Card.Title>
-            <h4 className="card-title">{tourData.name}</h4>
+            <strong>{tour.title}</strong>
           </Card.Title>
         </Link>
 
-        <Card.Text>
-          <p className="card-text">{tourData.description}</p>
+        <Card.Text as="div">
+          <div className="my-3">{tour.description}</div>
+          <div>Hour: {tour.hour}</div>
+          <div>Duration: {tour.duration}</div>
+          <div>Language: {tour.language}</div>
+          <div>Meeting Point: {tour.meetingPoint}</div>
+          <div>Price: {tour.price}</div>
         </Card.Text>
-      </div>
+      </Card.Body>
     </Card>
   );
 }
 
-export default Product;
+export default Tour;

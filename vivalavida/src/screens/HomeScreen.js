@@ -1,19 +1,18 @@
-import React from 'react'
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Navbar from "../components/navbar";
-import { useEffect, useState } from "react";
+import React from 'react';
+import Tour from '../components/Tour';
+import tourData from '../staticdata';
 
 function HomeScreen() {
   return (
-    <>
-    <div>HomeScreen</div>
-    
     <div>
+      <br></br>
+      <br></br>
       <h1>Bolas de Mono</h1>
+      {tourData.map((tour) => (
+        <Tour key={tour.id} tour={tour} />
+      ))}
     </div>
-    </>
-  )
+  );
 }
 
-export default HomeScreen
+export default HomeScreen;
