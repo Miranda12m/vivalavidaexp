@@ -1,16 +1,17 @@
-import React from 'react';
-import Tour from '../components/Tour';
-import tourData from '../staticdata';
+import React from 'react'
 
 function HomeScreen() {
   return (
+    <>
+    <div>HomeScreen</div>
+    
     <div>
       <h1>Bolas de Mono</h1>
       {tourData.map((tour) => (
         <Tour key={tour.id} tour={tour} />
       ))}
     </div>
-  );
+  )
 }
 
 export default HomeScreen;
