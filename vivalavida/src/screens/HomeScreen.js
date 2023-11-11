@@ -4,6 +4,7 @@ import tourData from '../staticdata';
 import { Container, Row, Col } from 'react-bootstrap';
 import InstagramEmbed from '../components/Instagram';
 import Carousel from '../components/banner';
+import Services from '../components/services';
 function HomeScreen() {
   return (
     <>
@@ -57,6 +58,7 @@ function HomeScreen() {
         </div>
 
       </Container >
+      <Services/>
     </>
 
   );
