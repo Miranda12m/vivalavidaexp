@@ -115,18 +115,18 @@ function Navbar({ currentPage, height = 100 }) {
         <header id="header" className="fixed-top desktop-menu menu-top-w">
           <div className="container d-flex align-items-center justify-content-lg-between">
             <h1 className="me-auto me-lg-0">
-              <Link to="/">VIVA LA VIDA</Link>
+              <Link to="/home">VIVA LA VIDA</Link>
             </h1>
             <nav id="navbar" className="navbar order-last order-lg-0">
               <ul>
                 <li>
-                  <Link id="home" to="/">
+                  <Link id="home" to="/home">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link id="services" to="/product/:id">
-                    Services
+                  <Link id="tour" to="/tour">
+                    Tours
                   </Link>
                 </li>
                 <li>

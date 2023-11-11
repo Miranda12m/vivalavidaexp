@@ -47,8 +47,8 @@ function Footer() {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="/services">
-                                                Services
+                                            <Link to="/tour">
+                                                Tours
                                             </Link>
                                         </li>
                                         <li>
