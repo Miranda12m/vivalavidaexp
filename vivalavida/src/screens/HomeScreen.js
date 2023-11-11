@@ -6,6 +6,7 @@ function HomeScreen() {
   return (
     <div>
       <br></br>
+      <br></br><br></br>
       <br></br>
       <h1>Bolas de Mono</h1>
       {tourData.map((tour) => (

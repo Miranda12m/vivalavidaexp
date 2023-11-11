@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #ff3c00;
+  color: #cf6a00;
   text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ a:hover {
 }
 
 #hero h1 span {
-  color: #ff3c00;
+  color: #cf6a00;
 }
 
 #hero h2 {
@@ -124,7 +124,7 @@ section {
   font-size: 20px;
   left: 0;
   top: -3px;
-  color: #ff3c00;
+  color: #cf6a00;
 }
 
 .about .content p:last-child {
@@ -154,7 +154,7 @@ section {
 .features .icon-box i {
   font-size: 48px;
   float: left;
-  color: #ff3c00;
+  color: #cf6a00;
 }
 
 .features .icon-box p {
@@ -206,7 +206,7 @@ section {
 .home-social-list li a:hover,
 .home-social-list li a:focus,
 .home-social-list li a:active {
-  color: #ff3c00;
+  color: #cf6a00;
 }
 
 .scrolldown {
@@ -229,7 +229,7 @@ section {
 .scrolldown a:hover,
 .scrolldown a:focus,
 .scrolldown a:active {
-  color: #ff3c00 !important;
+  color: #cf6a00 !important;
 }
 
 html[data-useragent*="MSIE 10.0"] .scrolldown,
