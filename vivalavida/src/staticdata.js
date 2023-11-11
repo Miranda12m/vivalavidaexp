@@ -86,4 +86,3 @@ const tourData = [
   ];
   
 export default tourData
-  
