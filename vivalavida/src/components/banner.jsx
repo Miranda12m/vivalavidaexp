@@ -7,7 +7,7 @@ export default function App() {
     <MDBCarousel style={{ position: 'relative', overflow: 'hidden', width: '100%', height: '750px', objectFit: 'fill' }}>
       <MDBCarouselItem itemId={1}>
         <img
-          src='https://mdbootstrap.com/img/new/slides/041.jpg'
+          src='https://images.unsplash.com/photo-1512813195386-6cf811ad3542?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           className='d-block vw-100'
           alt='...'
           style={{ objectFit: 'cover', height: '750px' }}
@@ -16,7 +16,7 @@ export default function App() {
       </MDBCarouselItem>
       <MDBCarouselItem itemId={2}>
         <img
-          src='https://mdbootstrap.com/img/new/slides/042.jpg'
+          src='https://images.unsplash.com/photo-1535159530326-d7bf54bfb24e?q=80&w=1808&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           className='d-block vw-100'
           alt='...'
           style={{ objectFit: 'cover', height: '750px' }}
@@ -24,7 +24,7 @@ export default function App() {
       </MDBCarouselItem>
       <MDBCarouselItem itemId={3}>
         <img
-          src='https://mdbootstrap.com/img/new/slides/043.jpg'
+          src='https://images.unsplash.com/photo-1564762332974-5bf63a654c9d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           className='d-block vw-100'
           alt='...'
           style={{ objectFit: 'cover', height: '750px' }}
