@@ -8,6 +8,7 @@ const tourData = [
       language: 'English',
       meetingPoint: "Frida Kahlo's Museum",
       price: 'Based on tips',
+      image: 'https://images.pexels.com/photos/6424244/pexels-photo-6424244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     },
     {
       id: 2,
@@ -18,6 +19,7 @@ const tourData = [
       language: 'Spanish',
       meetingPoint: 'Teotihuacan Visitor Center',
       price: '$30.00 per person',
+      image: 'https://images.pexels.com/photos/4092171/pexels-photo-4092171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     },
     {
       id: 3,
@@ -28,6 +30,7 @@ const tourData = [
       language: 'English',
       meetingPoint: 'Chapultepec Castle Entrance',
       price: '$25.00 per person',
+      image: 'https://images.pexels.com/photos/16138160/pexels-photo-16138160/free-photo-of-rascacielos-pavimento-urbano-mexico.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     },
     {
       id: 4,
@@ -38,6 +41,7 @@ const tourData = [
       language: 'Spanish',
       meetingPoint: 'Xochimilco Dock',
       price: '$20.00 per person',
+      image: 'https://images.unsplash.com/photo-1564762332974-5bf63a654c9d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       id: 5,
@@ -48,6 +52,7 @@ const tourData = [
       language: 'English',
       meetingPoint: 'Zócalo Square',
       price: '$15.00 per person',
+      image: 'https://images.pexels.com/photos/12331682/pexels-photo-12331682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     },
     {
       id: 6,
@@ -58,6 +63,7 @@ const tourData = [
       language: 'Spanish',
       meetingPoint: 'La Merced Market Entrance',
       price: '$18.00 per person',
+      image: '',
     },
     {
       id: 7,
@@ -68,6 +74,7 @@ const tourData = [
       language: 'English',
       meetingPoint: 'National Museum of Anthropology Entrance',
       price: '$22.00 per person',
+      image: 'https://images.pexels.com/photos/3680770/pexels-photo-3680770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     },
   ];
   

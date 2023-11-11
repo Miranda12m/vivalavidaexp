@@ -4,9 +4,8 @@ import { Card } from "react-bootstrap";
 
 function Tour({ tour }) {
   return (
-    <Card className="my-3 p-3 rounded">
-      <Link to={`/tour/${tour.id}`}>
-        {/* Assuming you have an image property in your tour data */}
+    <Card className="my-3 p-3 rounded" style={{ height: "480px" }}>
+      <Link hrefLang="#">
         <Card.Img src={tour.image} alt={tour.title} />
       </Link>
 
@@ -18,7 +17,6 @@ function Tour({ tour }) {
         </Link>
 
         <Card.Text as="div">
-          <div className="my-3">{tour.description}</div>
           <div>Hour: {tour.hour}</div>
           <div>Duration: {tour.duration}</div>
           <div>Language: {tour.language}</div>

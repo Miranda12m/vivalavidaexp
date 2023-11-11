@@ -152,12 +152,12 @@ function Navbar({ currentPage, height = 100 }) {
             <nav id="navbar" className="navbar order-last order-lg-0 ">
               <ul>
                 <li>
-                  <Link id="home" to="/">
+                  <Link id="home" to="/home">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link id="services" to="/product/:id">
+                  <Link id="services" to="/services">
                     Services
                   </Link>
                 </li>

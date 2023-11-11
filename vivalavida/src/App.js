@@ -3,7 +3,6 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
 import HomeScreen from "./screens/HomeScreen";
 import ContactScreen from "./screens/ContactScreen";
 import AOS from "aos";
@@ -16,13 +15,11 @@ function App() {
   useEffect(() => {
     AOS.init();
   }, []);
-  const [currentPage, setCurrentPage] = useState("home");
+  const [currentPage] = useState("services");
 
   return (
     <Router>
-
-            <Navbar height={10} currentPage={currentPage}></Navbar>
-
+      <Navbar height={10} currentPage={currentPage}></Navbar>
       <main className="py-3">
         <Container>
           <Routes>

@@ -1,18 +1,23 @@
 import React from 'react';
 import Tour from '../components/Tour';
 import tourData from '../staticdata';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function HomeScreen() {
   return (
-    <div>
-      <br></br>
-      <br></br>
+    <Container>
+      <br />
       <h1>Bolas de Mono</h1>
-      {tourData.map((tour) => (
-        <Tour key={tour.id} tour={tour} />
-      ))}
-    </div>
+      <Row>
+        {tourData.map((tour) => (
+          <Col key={tour.id} xs={12} sm={6} md={4} lg={4}>
+            <Tour tour={tour} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 }
 
 export default HomeScreen;
+
