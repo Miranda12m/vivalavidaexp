@@ -23,19 +23,25 @@ function App() {
   return (
     <Router>
 
-            <Navbar height={10} ></Navbar>
+      <Navbar height={10} ></Navbar>
 
-      <main className="py-3">
+
+      <main>
+        
+        <Routes>
+          <Route path="/home" element={<HomeScreen />} />
+
+        </Routes>
+
         <Container>
           <Routes>
-            <Route path="/home" element={<HomeScreen />} />
             <Route path="/contact" element={<ContactScreen />} />
             <Route path="/tour" element={<TourScreen />} />
           </Routes>
         </Container>
       </main>
-      <Footer/>
-      <Wapp/>
+      <Footer />
+      <Wapp />
     </Router>
   );
 }
