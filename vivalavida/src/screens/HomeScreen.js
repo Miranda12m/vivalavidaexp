@@ -6,18 +6,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from '../components/banner';
 function HomeScreen() {
   return (
-    <Container>
+    <div>
       <br />
       <br />
       <br />
       <h1>Home Screen bitch</h1>
-    </Container>
-    <div>
-      <Carousel/>
-      <h1>Bolas de Mono</h1>
-      {tourData.map((tour) => (
-        <Tour key={tour.id} tour={tour} />
-      ))}
     </div>
   );
 }
