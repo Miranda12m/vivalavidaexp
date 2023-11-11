@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 import HomeScreen from "./screens/HomeScreen";
-import TourScreen from "./screens/TourScreen";
 import ContactScreen from "./screens/ContactScreen";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
         <Container>
           <Routes>
             <Route path="/home" element={<HomeScreen />} />
-            <Route path="/product/:id" element={<TourScreen />} />
             <Route path="/contact" element={<ContactScreen />} />
           </Routes>
         </Container>
