@@ -5,12 +5,12 @@ import { Card } from "react-bootstrap";
 function Tour({ tour }) {
   return (
     <Card className="my-3 p-3 rounded" style={{ height: "480px" }}>
-      <Link hrefLang="#">
+      <Link to={tour.url}>
         <Card.Img src={tour.image} alt={tour.title} />
       </Link>
 
       <Card.Body as="div">
-        <Link to={`#`}>
+        <Link to={tour.url}>
           <Card.Title>
             <strong>{tour.title}</strong>
           </Card.Title>

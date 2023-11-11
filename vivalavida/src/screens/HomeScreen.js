@@ -7,14 +7,9 @@ function HomeScreen() {
   return (
     <Container>
       <br />
-      <h1>Bolas de Mono</h1>
-      <Row>
-        {tourData.map((tour) => (
-          <Col key={tour.id} xs={12} sm={6} md={4} lg={4}>
-            <Tour tour={tour} />
-          </Col>
-        ))}
-      </Row>
+      <br />
+      <br />
+      <h1>Home Screen bitch</h1>
     </Container>
   );
 }
