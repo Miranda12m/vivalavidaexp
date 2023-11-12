@@ -38,7 +38,7 @@ export default function Services() {
 
 
                 <Container style={{ marginBottom: '3%' }}>
-                    <Row style={{alignItems:'center', display: 'flex', justifyContent: 'center', marginBottom:'10%'}}>
+                    <Row style={{alignItems:'center', display: 'flex', justifyContent: 'center', marginBottom:'5%'}}>
                         <Col xs={6} md={4} style={{marginBottom:'4%'}}>
                             <a href='/tour'>
                                 <MDBCard className="mdb-card">
