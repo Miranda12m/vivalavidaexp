@@ -93,6 +93,7 @@ function HomeScreen() {
         </div>
       </Container>
       <Services />
+      <InstagramEmbed/>
     </>
 
   );
