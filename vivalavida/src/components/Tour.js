@@ -3,12 +3,10 @@ import { Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
 
 function Tour({ tour }) {
-  const imageUrl = tour.image.startsWith("http") ? tour.image : `http://localhost:8000${tour.image}`;
-
   return (
     <Card className="my-3 p-3 rounded" style={{ height: "480px" }}>
       <Link to={tour.url}>
-        <Card.Img src={imageUrl} alt={tour.title} />
+        <Card.Img src={tour.image} alt={tour.title} />
       </Link>
 
       <Card.Body as="div">
@@ -22,7 +20,7 @@ function Tour({ tour }) {
           <div>Hour: {tour.hour}</div>
           <div>Duration: {tour.duration}</div>
           <div>Language: {tour.language}</div>
-          <div>Meeting Point: {tour.meetingPoint}</div>
+          <div>Meeting Point: {tour.meeting_point}</div>
           <div>Price: {tour.price}</div>
         </Card.Text>
       </Card.Body>
