@@ -104,14 +104,10 @@ function Navbar({ currentPage, height = 100 }) {
       true
     );
   }, [currentPage, height]);
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
+  AOS.init();
   return (
     <>
-      <div className="all-wrapper">
+      <div className="all-wrapper" >
         <header id="header" className="fixed-top desktop-menu menu-top-w">
           <div className="container d-flex align-items-center justify-content-lg-between">
             <h1 className="me-auto me-lg-0" style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>
