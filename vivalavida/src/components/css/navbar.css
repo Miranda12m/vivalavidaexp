@@ -24,7 +24,7 @@ a:hover {
 }
 
 #header .logo a {
-  color: #000000;
+  color: #ffffff;
 }
 #header #mobile-nav-toggle {
   color: #fff;
@@ -71,7 +71,7 @@ a:hover {
   max-height: 40px;
 }
 .get-started-btn {
-  color: #000000;
+  color: #ffffff;
   border-radius: 4px;
   padding: 7px 25px 8px 25px;
   white-space: nowrap;
@@ -120,7 +120,7 @@ a:hover {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 600;
-  color: black;
+  color: rgb(255, 255, 255);
   white-space: nowrap;
   transition: 0.3s;
 }

@@ -50,7 +50,7 @@ function HomeScreen() {
                 <img
                   src="https://images.unsplash.com/photo-1580934738416-ad531f2920f7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="About Us"
-                  style={{ maxWidth: '100%', minWidth: '300px', height: 'auto' }}
+                  style={{ maxWidth: '100%', minWidth: '300px', height: 'auto', borderRadius: "2%" }}
                 />
               </div>
             </Col>
