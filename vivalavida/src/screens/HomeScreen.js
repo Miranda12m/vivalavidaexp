@@ -11,8 +11,18 @@ import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 function HomeScreen() {
   return (
     <>
+    
       <Carousel />
     <br></br>
+    <style>
+                {`
+                  .button-hover:hover {
+                      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+                      transform: scale(1.02);
+                      transition: all 0.2s ease-in-out;
+                  }
+                `}
+            </style>
       <Container>
         <div
           style={{
@@ -40,27 +50,27 @@ function HomeScreen() {
                 </p>
                 {/* Agrega el botón de redirección hacia "Contact Us" */}
                 <div style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
-                  <button onClick={() => window.location.href = '/contact-us'} className="btn btn-primary" style={{ verticalAlign: 'center', margin: 'auto', alignSelf: 'center' }}>Contact Us</button>
+                  <button onClick={() => window.location.href = '/contact-us'} className="btn btn-primary button-hover" style={{ verticalAlign: 'center', margin: 'auto', alignSelf: 'center' }}>Contact Us</button>
 
                 </div>
                 <Row className="mt-5">
                   <Col>
-                    <MDBBtn className='m-1' style={{ backgroundColor: '#3b5998' }} href='#'>
+                    <MDBBtn className='m-1 button-hover' style={{ backgroundColor: '#3b5998' }} href='#'>
                       <FaFacebook size={20} style={{ marginRight: '10px' }} /> Facebook
                     </MDBBtn>
                   </Col>
                   <Col>
-                    <MDBBtn className='m-1' style={{ backgroundColor: '#55acee' }} href='#'>
+                    <MDBBtn className='m-1 button-hover' style={{ backgroundColor: '#55acee' }} href='#'>
                       <FaTwitter size={20} style={{ marginRight: '10px' }} /> Twitter
                     </MDBBtn>
                   </Col>
                   <Col>
-                    <MDBBtn className='m-1' style={{ backgroundColor: '#ac2bac' }} href='#'>
+                    <MDBBtn className='m-1 button-hover' style={{ backgroundColor: '#ac2bac' }} href='#'>
                       <FaInstagram size={20} style={{ marginRight: '10px' }} />Instagram
                     </MDBBtn>
                   </Col>
                   <Col>
-                    <MDBBtn className='m-1' style={{ backgroundColor: '#ff4500' }} href='#'>
+                    <MDBBtn className='m-1 button-hover' style={{ backgroundColor: '#ff4500' }} href='#'>
                     <FaEvernote size={20} style={{ marginRight: '10px' }} />Eventbrite
                     </MDBBtn>
                   </Col>
