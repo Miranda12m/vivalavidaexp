@@ -79,7 +79,7 @@ function HomeScreen() {
 
             </Col>
             <Col>
-              <div style={{ flex: 1, order: 1, position: 'relative', marginLeft: '10%', marginTop: '5%' }} data-aos="fade-left">
+              <div style={{ flex: 1, order: 1, position: 'relative', marginLeft: '10%', marginTop: '5%' }} data-aos="fade-up">
                 <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(207, 106, 0, 0.8)', transform: 'rotate(-7deg)' }}></div>
                 <img
                   src="https://images.unsplash.com/photo-1580934738416-ad531f2920f7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
