@@ -9,7 +9,7 @@ function InstagramEmbed() {
     const token = 'IGQWRNQWdIZAlZAWYmRwLVF5V1VkWnJYckFJOGoxdTJ1SGVoUnJjbzRwOHNsUFNNdHJPaHZAwT09mSldBbXpTY2RZAT250QlZAjZAURhNG8ybm9KQXhUTTY2b0tyMmdlNjZA2MTU1U0M5WmhvWE1BN2p5eGpnczRRN3VQQ28ZD';
     const fields = "caption,media_url,media_type,permalink,timestamp";
     const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=${fields}`;
-    
+     
     try {
       const { data } = await axios.get(url);
       setInstaData(data.data); // Assuming the media data is in the 'data' property
