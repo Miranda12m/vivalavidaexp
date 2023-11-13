@@ -9,7 +9,7 @@ function TourScreen() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:8000/tours/api/v1/tours/');
+        const response = await axios.get('/tours/api/v1/tours/');
         setTours(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
