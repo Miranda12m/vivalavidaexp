@@ -77,7 +77,7 @@ function InstagramEmbed() {
               <a href={item.permalink} target="_blank" rel="noopener noreferrer" className="gallery-item">
                 <div className="card mdb-card mdbs-card">
                   {item.media_type === 'VIDEO' ? (
-                    <video  controls>
+                    <video autoPlay muted controls>
                       <source src={item.media_url} type="video/mp4" style={{ borderRadius: "2%" }} />
                       Your browser does not support the video tag.
                     </video>
