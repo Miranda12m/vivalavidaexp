@@ -8,12 +8,17 @@ function Navbar({ currentPage, height = 100 }) {
   useEffect(() => {
     const select = (el, all = false) => {
       el = el.trim();
+      if (!el) {
+        console.error("Empty selector provided."); // Puedes mostrar un mensaje de error o manejar el caso según sea necesario
+        return null;
+      }
       if (all) {
         return [...document.querySelectorAll(el)];
       } else {
         return document.querySelector(el);
       }
     };
+    
 
     const on = (type, el, listener, all = false) => {
       let selectEl = select(el, all);
@@ -35,14 +40,22 @@ function Navbar({ currentPage, height = 100 }) {
      */
     const scrollto = (el) => {
       let header = select("#header");
+      if (!header) {
+        console.error("Element with ID 'header' not found.");
+        return;
+      }
+    
       let offset = header.offsetHeight;
-
-      let elementPos = select(el).offsetTop;
-      window.scrollTo({
-        top: elementPos - offset,
-        behavior: "smooth",
-      });
+      let elementPos = select(el)?.offsetTop;
+    
+      if (elementPos !== undefined) {
+        window.scrollTo({
+          top: elementPos - offset,
+          behavior: "smooth",
+        });
+      }
     };
+    
 
     /**
      * Toggle .header-scrolled class to #header when page is scrolled
@@ -98,7 +111,18 @@ function Navbar({ currentPage, height = 100 }) {
           if (navbar.classList.contains("navbar-mobile")) {
             navbar.classList.remove("navbar-mobile");
           }
+
+          // Scroll to the target element
           scrollto(this.hash);
+
+          // Scroll to the top of the page
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+
+          // Reload the page
+          window.location.reload();
         }
       },
       true
@@ -138,12 +162,12 @@ function Navbar({ currentPage, height = 100 }) {
             </nav>
 
             <a
-              href="mailto:contact@weblessproject.com"
+              href="https://www.instagram.com/vivalavidaexperiences/"
               target="_blank"
-              className="get-started-btn scrollto"
+              className="get-started-btn"
               style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 1)'}}
               >
-              Contact Us
+              Find Us
             </a>
           </div>
         </header>
