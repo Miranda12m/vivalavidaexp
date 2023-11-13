@@ -39,9 +39,9 @@ export default function Services() {
 
                 <Container style={{ marginBottom: '3%' }}>
                     <Row style={{alignItems:'center', display: 'flex', justifyContent: 'center', marginBottom:'5%'}}>
-                        <Col xs={6} md={4} style={{marginBottom:'4%'}}>
+                        <Col  style={{marginBottom:'4%'}}>
                             <a href='/tour'>
-                                <MDBCard className="mdb-card">
+                                <MDBCard className="mdb-card" style={{minWidth:'300px', marginLeft:'5%', marginRight:'5%', marginBottom:'5%'}}>
                                     <MDBCardImage src='https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' position='top' style={{ borderRadius: "1.2%" }} alt='...' />
                                     <MDBCardBody>
                                         <MDBCardTitle>Card title</MDBCardTitle>
@@ -55,9 +55,9 @@ export default function Services() {
                                 </MDBCard>
                             </a>
                         </Col>
-                        <Col xs={6} md={4} style={{marginBottom:'4%'}}>
+                        <Col  style={{marginBottom:'4%'}}>
                             <a href='/contact'>
-                                <MDBCard className="mdb-card">
+                                <MDBCard className="mdb-card" style={{minWidth:'300px', marginLeft:'5%', marginRight:'5%', marginBottom:'5%'}}>
                                     <MDBCardImage src='https://plus.unsplash.com/premium_photo-1681406994990-e16f7e02e027?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' position='top' style={{ borderRadius: "1.2%" }} alt='...' />
                                     <MDBCardBody>
                                         <MDBCardTitle>Card title</MDBCardTitle>
@@ -71,9 +71,9 @@ export default function Services() {
                                 </MDBCard>
                             </a>
                         </Col>
-                        <Col xs={6} md={4} style={{marginBottom:'4%'}}>
+                        <Col style={{marginBottom:'4%'}}>
                             <a href='/tour'>
-                                <MDBCard className="mdb-card" onClick={() => window.location.href = '/tour'} >
+                                <MDBCard className="mdb-card" onClick={() => window.location.href = '/tour'} style={{minWidth:'300px', marginLeft:'5%', marginRight:'5%', marginBottom:'5%'}} >
                                     <MDBCardImage src='https://images.unsplash.com/photo-1518638150340-f706e86654de?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' position='top' style={{ borderRadius: "1.2%" }} alt='...' />
                                     <MDBCardBody>
                                         <MDBCardTitle>Card title</MDBCardTitle>
