@@ -12,7 +12,7 @@ import TourScreen from "./screens/TourScreen"
 //
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./App.css"
 import Wapp from './components/wapp'
 function App() {
