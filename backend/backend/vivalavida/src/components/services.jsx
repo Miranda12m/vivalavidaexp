@@ -44,7 +44,7 @@ export default function Services() {
                                 <MDBCard className="mdb-card" style={{minWidth:'300px', marginLeft:'5%', marginRight:'5%', marginBottom:'5%'}}>
                                     <MDBCardImage src='https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' position='top' style={{ borderRadius: "1.2%" }} alt='...' />
                                     <MDBCardBody>
-                                        <MDBCardTitle>Card title</MDBCardTitle>
+                                        <MDBCardTitle><strong>Mexico City Tours</strong></MDBCardTitle>
                                         <MDBCardText>
                                             Some quick example text to build on the card title and make up the bulk of the card's content.
                                         </MDBCardText>
@@ -60,7 +60,7 @@ export default function Services() {
                                 <MDBCard className="mdb-card" style={{minWidth:'300px', marginLeft:'5%', marginRight:'5%', marginBottom:'5%'}}>
                                     <MDBCardImage src='https://plus.unsplash.com/premium_photo-1681406994990-e16f7e02e027?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' position='top' style={{ borderRadius: "1.2%" }} alt='...' />
                                     <MDBCardBody>
-                                        <MDBCardTitle>Card title</MDBCardTitle>
+                                        <MDBCardTitle><strong>Street Food Tours</strong></MDBCardTitle>
                                         <MDBCardText>
                                             Some quick example text to build on the card title and make up the bulk of the card's content.
                                         </MDBCardText>
@@ -76,7 +76,7 @@ export default function Services() {
                                 <MDBCard className="mdb-card" onClick={() => window.location.href = '/tour'} style={{minWidth:'300px', marginLeft:'5%', marginRight:'5%', marginBottom:'5%'}} >
                                     <MDBCardImage src='https://images.unsplash.com/photo-1518638150340-f706e86654de?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' position='top' style={{ borderRadius: "1.2%" }} alt='...' />
                                     <MDBCardBody>
-                                        <MDBCardTitle>Card title</MDBCardTitle>
+                                        <MDBCardTitle><strong>Custom Tour Experience</strong></MDBCardTitle>
                                         <MDBCardText>
                                             Some quick example text to build on the card title and make up the bulk of the card's content.
                                         </MDBCardText>
