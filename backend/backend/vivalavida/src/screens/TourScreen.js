@@ -24,8 +24,10 @@ function TourScreen() {
       <br />
       <br />
       <br />
-      <h1>Bolas de Mono</h1>
-      <Row>
+      <br />
+      <br />
+      <h1 data-aos="fade-right">Tours</h1>
+      <Row data-aos="zoom-in">
         {tours.map((tour) => (
           <Col key={tour.id} xs={12} sm={6} md={4} lg={4}>
             <Tour tour={tour} />

@@ -22,7 +22,7 @@ function App() {
 
   return (
     <Router>
-      <Navbar height={10} ></Navbar>
+      <Navbar height={10}  data-aos-easing='ease' data-aos-duration='400' data-aos-delay='0'></Navbar>
       <main style={{backgroundColor:'#edecea'}}>
         {/*Esta*/}
         <Routes>

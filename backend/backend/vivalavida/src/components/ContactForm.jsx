@@ -83,7 +83,7 @@ function ContactForm() {
 
       <form onSubmit={handleSubmit} style={{ maxWidth: '800px', margin: 'auto' }}>
         <div className="row mb-3">
-          <div className={`form-group col-md-6 ${validation.name}`}>
+          <div data-aos="fade-right" className={`form-group col-md-6 ${validation.name}`}>
             <label htmlFor="name" className="form-label">
               Nombre:
             </label>
@@ -97,7 +97,7 @@ function ContactForm() {
               placeholder="Ingrese su nombre"
             />
           </div>
-          <div className={`form-group col-md-6 ${validation.email}`}>
+          <div data-aos="fade-left" className={`form-group col-md-6 ${validation.email}`}>
             <label htmlFor="email" className="form-label">
               Correo electrónico:
             </label>
@@ -112,7 +112,7 @@ function ContactForm() {
             />
           </div>
         </div>
-        <div className={`form-group mb-3 ${validation.message}`} >
+        <div data-aos="fade-up" className={`form-group mb-3 ${validation.message}`} >
           <label htmlFor="message" className="form-label">
             Mensaje:
           </label>
@@ -126,7 +126,7 @@ function ContactForm() {
             style={{ height: '120px' }}
           />
         </div>
-        <div className="text-center">
+        <div className="text-center" data-aos="fade-up">
           <button type="submit" className="btn btn-primary button-hover">
             Enviar
           </button>
