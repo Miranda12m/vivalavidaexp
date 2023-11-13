@@ -42,7 +42,6 @@ function ContactForm() {
     // Verificar si hay algún campo inválido
     if (Object.values(newValidation).includes('is-invalid')) {
       alert('Por favor, completa todos los campos correctamente.');
-      return;
     }
 
     // Aquí puedes enviar los datos a tu servidor o realizar otras acciones necesarias

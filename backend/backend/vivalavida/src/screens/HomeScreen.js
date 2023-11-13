@@ -48,27 +48,27 @@ function HomeScreen() {
                 </p>
                 {/* Agrega el botón de redirección hacia "Contact Us" */}
                 <div style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
-                  <button onClick={() => window.location.href = '/contact-us'} className="btn btn-primary button-hover" style={{ verticalAlign: 'center', margin: 'auto', alignSelf: 'center' }}>Contact Us</button>
+                  <button onClick={() => window.location.href = '/#/contact'} className="btn btn-primary button-hover" style={{ verticalAlign: 'center', margin: 'auto', alignSelf: 'center' }}>Contact Us</button>
 
                 </div>
                 <Row className="mt-5" style={{ alignItems: 'center', display: 'flex', justifyContent: 'center', marginBottom: '10%' }}>
                   <Col>
-                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#3b5998' }} onClick={() => window.location.href = 'https://www.instagram.com/vivalavidaexperiences/'}>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#3b5998' }} onClick={() => window.open ( 'https://www.instagram.com/vivalavidaexperiences/', '_blank')}>
                       <FaFacebook size={20} style={{ marginRight: '10px' }} /> Facebook
                     </button>
                   </Col>
                   <Col>
-                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#55acee' }} onClick={() => window.location.href = 'https://www.instagram.com/vivalavidaexperiences/'}>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#55acee' }} onClick={() => window.open ( 'https://www.instagram.com/vivalavidaexperiences/', '_blank')}>
                       <FaTwitter size={20} style={{ marginRight: '10px' }} /> Twitter
                     </button>
                   </Col>
                   <Col>
-                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#ac2bac' }} onClick={() => window.location.href = 'https://www.instagram.com/vivalavidaexperiences/'}>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#ac2bac' }} onClick={() => window.open ( 'https://www.instagram.com/vivalavidaexperiences/', '_blank')}>
                       <FaInstagram size={20} style={{ marginRight: '10px' }} />Instagram
                     </button>
                   </Col>
                   <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
-                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#ff4500' }} onClick={() => window.location.href = 'https://www.instagram.com/vivalavidaexperiences/'}>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#ff4500' }} onClick={() => window.open ( 'https://www.instagram.com/vivalavidaexperiences/', '_blank')}>
                       <FaEvernote size={20} style={{ marginRight: '10px' }} />Eventbrite
                     </button>
                   </Col>
