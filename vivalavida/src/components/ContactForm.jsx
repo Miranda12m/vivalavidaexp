@@ -70,7 +70,7 @@ function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ maxWidth: '600px', margin: 'auto' }}>
+    <form onSubmit={handleSubmit} style={{ maxWidth: '800px', margin: 'auto' }}>
       <div className="row mb-3">
         <div className={`form-group col-md-6 ${validation.name}`}>
           <label htmlFor="name" className="form-label">
@@ -101,7 +101,7 @@ function ContactForm() {
           />
         </div>
       </div>
-      <div className={`form-group mb-3 ${validation.message}`}>
+      <div className={`form-group mb-3 ${validation.message}`} >
         <label htmlFor="message" className="form-label">
           Mensaje:
         </label>
@@ -112,6 +112,7 @@ function ContactForm() {
           onChange={handleChange}
           className="form-control"
           placeholder="Ingrese su mensaje"
+          style={{height:'120px'}}
         />
       </div>
       <div className="text-center">
