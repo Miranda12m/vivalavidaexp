@@ -26,7 +26,7 @@ function App() {
       <Navbar height={10} ></Navbar>
 
 
-      <main>
+      <main style={{backgroundColor:'#edecea'}}>
         
         <Routes>
           <Route path="/home" element={<HomeScreen />} />

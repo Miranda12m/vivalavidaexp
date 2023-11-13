@@ -1,12 +1,10 @@
 import React from 'react';
-import Tour from '../components/Tour';
-import tourData from '../staticdata';
 import { Container, Row, Col } from 'react-bootstrap';
 import InstagramEmbed from '../components/Instagram';
 import Carousel from '../components/banner';
 import Services from '../components/services';
 import { FaFacebook, FaTwitter, FaInstagram, FaEvernote } from 'react-icons/fa';
-import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
+
 
 function HomeScreen() {
   return (
@@ -55,24 +53,24 @@ function HomeScreen() {
                 </div>
                 <Row className="mt-5" style={{ alignItems: 'center', display: 'flex', justifyContent: 'center', marginBottom: '10%' }}>
                   <Col>
-                    <MDBBtn className='m-1 button-hover' style={{ backgroundColor: '#3b5998' }} href='#'>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#3b5998' }} onClick={() => window.location.href = 'https://www.instagram.com/vivalavidaexperiences/'}>
                       <FaFacebook size={20} style={{ marginRight: '10px' }} /> Facebook
-                    </MDBBtn>
+                    </button>
                   </Col>
                   <Col>
-                    <MDBBtn className='m-1 button-hover' style={{ backgroundColor: '#55acee' }} href='#'>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#55acee' }} onClick={() => window.location.href = 'https://www.instagram.com/vivalavidaexperiences/'}>
                       <FaTwitter size={20} style={{ marginRight: '10px' }} /> Twitter
-                    </MDBBtn>
+                    </button>
                   </Col>
                   <Col>
-                    <MDBBtn className='m-1 button-hover' style={{ backgroundColor: '#ac2bac' }} href='#'>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#ac2bac' }} onClick={() => window.location.href = 'https://www.instagram.com/vivalavidaexperiences/'}>
                       <FaInstagram size={20} style={{ marginRight: '10px' }} />Instagram
-                    </MDBBtn>
+                    </button>
                   </Col>
                   <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
-                    <MDBBtn className='m-1 button-hover' style={{ backgroundColor: '#ff4500' }} href='#'>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#ff4500' }} onClick={() => window.location.href = 'https://www.instagram.com/vivalavidaexperiences/'}>
                       <FaEvernote size={20} style={{ marginRight: '10px' }} />Eventbrite
-                    </MDBBtn>
+                    </button>
                   </Col>
                 </Row>
               </div>

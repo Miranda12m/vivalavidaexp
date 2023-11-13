@@ -91,7 +91,7 @@ function Wapp() {
           </a>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}></div>
         </div>
-        <div className="whatsapp-popup-button" id="whatsapp-popup" onClick={toggleWhatsApp}>
+        <div className="whatsapp-popup-button button-hover" id="whatsapp-popup" onClick={toggleWhatsApp}>
           <div className="whatsapp-notify"></div>
           <div className="whatsapp-button-main">
             <svg className="whatsapp-send-icon-big" xmlns="http://www.w3.org/2000/svg" version="1" width="32" height="32" viewBox="0 0 90 90">

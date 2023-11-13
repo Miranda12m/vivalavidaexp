@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import { Link } from "react-router-dom";
 import "./css/navbar.css";
 import AOS from "aos";
@@ -107,25 +107,25 @@ function Navbar({ currentPage, height = 100 }) {
   AOS.init();
   return (
     <>
-      <div className="all-wrapper" >
+      <div className="all-wrapper " >
         <header id="header" className="fixed-top desktop-menu menu-top-w">
           <div className="container d-flex align-items-center justify-content-lg-between">
-            <h1 className="me-auto me-lg-0" style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>
+            <h1 className="me-auto me-lg-0" style={{textShadow: '2px 2px 4px rgba(0, 0, 0, .7)'}}>
               <Link to="/home">VIVA LA VIDA</Link>
             </h1>
             <nav id="navbar" className="navbar order-last order-lg-0">
               <ul>
-                <li style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>
+                <li style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 1)'}}>
                   <Link id="home" to="/home">
                     Home
                   </Link>
                 </li>
-                <li style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>
+                <li style={{textShadow: '2px 2px 4px   rgba(0, 0, 0, 1)'}}>
                   <Link id="tour" to="/tour">
                     Tours
                   </Link>
                 </li>
-                <li style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>
+                <li style={{textShadow: '2px 2px 4px  rgba(0, 0, 0, 1)'}}>
                   <Link id="aboutus" to="/contact">
                     Contact Us
                   </Link>
@@ -141,7 +141,7 @@ function Navbar({ currentPage, height = 100 }) {
               href="mailto:contact@weblessproject.com"
               target="_blank"
               className="get-started-btn scrollto"
-              style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}
+              style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 1)'}}
               >
               Contact Us
             </a>

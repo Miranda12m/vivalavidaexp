@@ -6,6 +6,8 @@ import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 
 function ContactScreen() {
   return (
+    <>
+    <div ></div>
     <Container>
       <br />
       <br />
@@ -35,27 +37,27 @@ function ContactScreen() {
                 Bolas lorem, Gabus en este card hay que agregar socials y algun boton mamalon para que el usuario no tenga que utilizar el forms
               </p>
               <Row className="mt-5" style={{ alignItems: 'center', display: 'flex', justifyContent: 'center', marginBottom: '10%' }}>
-                <Col>
-                  <MDBBtn className='m-1 button-hover' style={{ backgroundColor: '#3b5998' }} href='#'>
-                    <FaFacebook size={20} style={{ marginRight: '10px' }} /> Facebook
-                  </MDBBtn>
-                </Col>
-                <Col>
-                  <MDBBtn className='m-1 button-hover' style={{ backgroundColor: '#55acee' }} href='#'>
-                    <FaTwitter size={20} style={{ marginRight: '10px' }} /> Twitter
-                  </MDBBtn>
-                </Col>
-                <Col>
-                  <MDBBtn className='m-1 button-hover' style={{ backgroundColor: '#ac2bac' }} href='#'>
-                    <FaInstagram size={20} style={{ marginRight: '10px' }} />Instagram
-                  </MDBBtn>
-                </Col>
-                <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
-                  <MDBBtn className='m-1 button-hover' style={{ backgroundColor: '#ff4500' }} href='#'>
-                    <FaEvernote size={20} style={{ marginRight: '10px' }} />Eventbrite
-                  </MDBBtn>
-                </Col>
-              </Row>
+                  <Col>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#3b5998' }} onClick={() => window.location.href = 'https://www.instagram.com/vivalavidaexperiences/'}>
+                      <FaFacebook size={20} style={{ marginRight: '10px' }} /> Facebook
+                    </button>
+                  </Col>
+                  <Col>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#55acee' }} onClick={() => window.location.href = 'https://www.instagram.com/vivalavidaexperiences/'}>
+                      <FaTwitter size={20} style={{ marginRight: '10px' }} /> Twitter
+                    </button>
+                  </Col>
+                  <Col>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#ac2bac' }} onClick={() => window.location.href = 'https://www.instagram.com/vivalavidaexperiences/'}>
+                      <FaInstagram size={20} style={{ marginRight: '10px' }} />Instagram
+                    </button>
+                  </Col>
+                  <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#ff4500' }} onClick={() => window.location.href = 'https://www.instagram.com/vivalavidaexperiences/'}>
+                      <FaEvernote size={20} style={{ marginRight: '10px' }} />Eventbrite
+                    </button>
+                  </Col>
+                </Row>
             </Card.Body>
           </Col>
         </Row>
@@ -64,6 +66,7 @@ function ContactScreen() {
       <br />
       <br />
     </Container>
+    </>
   )
 }
 
