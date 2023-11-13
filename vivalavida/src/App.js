@@ -1,7 +1,7 @@
 // Bootstrap Comp
 import React from "react";
 import { Container } from "react-bootstrap";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, HashRouter as Router, Routes, Navigate } from "react-router-dom";
 //
 import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
@@ -22,15 +22,16 @@ function App() {
 
   return (
     <Router>
-
       <Navbar height={10} ></Navbar>
-
-
       <main style={{backgroundColor:'#edecea'}}>
-        
+        {/*Esta*/}
         <Routes>
-          <Route path="/home" element={<HomeScreen />} />
+        <Route
+            path="/"
+            element={<Navigate to="/home" replace />}
+          />
 
+          <Route path="/home" element={<HomeScreen />} />
         </Routes>
 
         <Container>
