@@ -69,7 +69,7 @@ function InstagramEmbed() {
     </style>
 
     <Container>
-      <div className="container mt-4" data-aos="fade-left">
+      <div className="container mt-4" data-aos="fade-up">
         <h2 className="text-center mb-4">Instagram Gallery</h2>
         <div className="row">
           {instaData.slice(0, 9).map((item) => (
