@@ -29,10 +29,10 @@ function Tour({ tour }) {
                 `}
       </style>
 
-      <Card className="my-3 p-3 rounded" style={{ height: "480px" }}>
+      
         <Link to={tour.url}>
-          <MDBCard className="mdb-card">
-            <MDBCardImage src={tour.image} position='top' style={{ borderRadius: "1.2%" }} alt={tour.title} />
+          <MDBCard className="mdb-card rounded" style={{ height: "540px", width: '400px' }}>
+            <MDBCardImage src={tour.image} position='top' style={{ borderRadius: "6.6%", height: "260px" }} alt={tour.title} />
             <MDBCardBody>
               <MDBCardTitle>{tour.title}</MDBCardTitle>
               <MDBCardText>
@@ -50,29 +50,8 @@ function Tour({ tour }) {
             </MDBCardBody>
           </MDBCard>
         </Link>
-      </Card>
-
-      <Card className="my-3 p-3 rounded" style={{ height: "480px" }}>
-        <Link to={tour.url}>
-          <Card.Img src={tour.image} alt={tour.title} />
-        </Link>
-
-        <Card.Body as="div">
-          <Link to={tour.url}>
-            <Card.Title>
-              <strong>{tour.title}</strong>
-            </Card.Title>
-          </Link>
-
-          <Card.Text as="div">
-            <div>Hour: {tour.hour}</div>
-            <div>Duration: {tour.duration}</div>
-            <div>Language: {tour.language}</div>
-            <div>Meeting Point: {tour.meeting_point}</div>
-            <div>Price: {tour.price}</div>
-          </Card.Text>
-        </Card.Body>
-      </Card>
+        <br></br>
+        <br></br>
     </>
   );
 }
