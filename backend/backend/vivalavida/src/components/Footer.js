@@ -1,12 +1,44 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import "./css/footer.css";
+import { FaFacebook, FaTwitter, FaInstagram, FaEvernote } from 'react-icons/fa';
 function Footer() {
-  return (
-    <>
+    return (
+        <>
             <footer className="footer-section">
-                <div className="container">
+                <div class="site-footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <h2 class="Titulos text-white mb-lg-0">VIVA LA VIDA</h2>
+                            </div>
 
+                            <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                                <ul class="social-icon d-flex justify-content-lg-end">
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link">
+                                            <FaFacebook size={20} style={{ marginRight: '10px', color: 'white' }} />
+                                        </a>
+                                    </li>
+
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link">
+                                            <FaInstagram size={20} style={{ marginRight: '10px', color: 'white' }} />
+                                        </a>
+                                    </li>
+
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link">
+                                            <FaEvernote size={20} style={{ marginRight: '10px', color: 'white' }} />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Background-footer"></div>
+                <div className="container">
                     <div className="footer-content pt-5 pb-5">
                         <div className="row">
                             <div className="col-xl-4 col-lg-4 mb-50">
@@ -109,7 +141,7 @@ function Footer() {
                 </div>
             </footer>
         </>
-  )
+    )
 }
 
 export default Footer

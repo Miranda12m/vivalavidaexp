@@ -32,14 +32,10 @@ function App() {
           />
 
           <Route path="/home" element={<HomeScreen />} />
+          <Route path="/contact" element={<ContactScreen />} />
+            <Route path="/services" element={<TourScreen />} />
         </Routes>
 
-        <Container>
-          <Routes>
-            <Route path="/contact" element={<ContactScreen />} />
-            <Route path="/tour" element={<TourScreen />} />
-          </Routes>
-        </Container>
       </main>
       <Footer />
       <Wapp />

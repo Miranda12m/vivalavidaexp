@@ -145,13 +145,13 @@ function Navbar({ currentPage, height = 100 }) {
                   </Link>
                 </li>
                 <li style={{textShadow: '2px 2px 4px   rgba(0, 0, 0, 1)'}}>
-                  <Link id="tour" to="/tour">
-                    Tours
+                  <Link id="tour" to="/services">
+                    Services
                   </Link>
                 </li>
                 <li style={{textShadow: '2px 2px 4px  rgba(0, 0, 0, 1)'}}>
                   <Link id="aboutus" to="/contact">
-                    Contact Us
+                    Contact
                   </Link>
                 </li>
               </ul>

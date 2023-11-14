@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Tour from '../components/Tour';
+import Tour from '../components/services/Tour';
 import { Container, Row, Col } from 'react-bootstrap';
-
+import BannerTour from '../components/services/banners';
 function TourScreen() {
   const [tours, setTours] = useState([]);
 
@@ -20,6 +20,8 @@ function TourScreen() {
   }, []); // Empty dependency array to run the effect only once on mount
 
   return (
+    <>
+    <BannerTour />
     <Container>
       <br />
       <br />
@@ -35,6 +37,7 @@ function TourScreen() {
         ))}
       </Row>
     </Container>
+    </>
   );
 }
 
