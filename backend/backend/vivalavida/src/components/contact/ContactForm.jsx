@@ -109,6 +109,7 @@ function ContactForm() {
               className="form-control"
               placeholder="Ingrese su correo electrónico"
             />
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
         </div>
         <div data-aos="fade-up" className={`form-group mb-3 ${validation.message}`} >
