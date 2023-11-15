@@ -5,14 +5,19 @@ import Carousel from '../components/home/banner';
 import Services from '../components/home/services';
 import { FaFacebook, FaTwitter, FaInstagram, FaEvernote } from 'react-icons/fa';
 import Alianzas from '../components/home/alianzas';
-
+import Testimonials from '../components/home/testimonials';
 function HomeScreen() {
   return (
     <>
 
       <Carousel />
-      <Alianzas /> 
+      <Alianzas />
       <Services />
+      <div style={{ backgroundColor: 'white' }}>
+  
+
+
+      </div>
       <br></br>
       <style>
         {`
@@ -55,22 +60,22 @@ function HomeScreen() {
                 </div>
                 <Row className="mt-5" style={{ alignItems: 'center', display: 'flex', justifyContent: 'center', marginBottom: '10%' }}>
                   <Col>
-                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#3b5998' }} onClick={() => window.open ( 'https://www.instagram.com/vivalavidaexperiences/', '_blank')}>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#3b5998' }} onClick={() => window.open('https://www.instagram.com/vivalavidaexperiences/', '_blank')}>
                       <FaFacebook size={20} style={{ marginRight: '10px' }} /> Facebook
                     </button>
                   </Col>
                   <Col>
-                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#55acee' }} onClick={() => window.open ( 'https://www.instagram.com/vivalavidaexperiences/', '_blank')}>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#55acee' }} onClick={() => window.open('https://www.instagram.com/vivalavidaexperiences/', '_blank')}>
                       <FaTwitter size={20} style={{ marginRight: '10px' }} /> Twitter
                     </button>
                   </Col>
                   <Col>
-                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#ac2bac' }} onClick={() => window.open ( 'https://www.instagram.com/vivalavidaexperiences/', '_blank')}>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#ac2bac' }} onClick={() => window.open('https://www.instagram.com/vivalavidaexperiences/', '_blank')}>
                       <FaInstagram size={20} style={{ marginRight: '10px' }} />Instagram
                     </button>
                   </Col>
                   <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
-                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#ff4500' }} onClick={() => window.open ( 'https://www.instagram.com/vivalavidaexperiences/', '_blank')}>
+                    <button className='m-1 btn btn-primary button-hover' style={{ backgroundColor: '#ff4500' }} onClick={() => window.open('https://www.instagram.com/vivalavidaexperiences/', '_blank')}>
                       <FaEvernote size={20} style={{ marginRight: '10px' }} />Eventbrite
                     </button>
                   </Col>
@@ -83,7 +88,7 @@ function HomeScreen() {
                 <img
                   src="https://images.unsplash.com/photo-1580934738416-ad531f2920f7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="About Us"
-                  style={{ maxWidth: '87%', minWidth: '300px', height: 'auto', borderRadius: '2%'}}
+                  style={{ maxWidth: '87%', minWidth: '300px', height: 'auto', borderRadius: '2%' }}
                 />
               </div>
             </Col>
@@ -91,7 +96,7 @@ function HomeScreen() {
 
         </div>
       </Container>
-     
+
       <InstagramEmbed />
     </>
 

@@ -14,6 +14,7 @@ function BannerContact() {
           }
         `}
       </style>
+      
       <MDBCarousel style={{ position: 'relative', overflow: 'hidden', width: '100%', height: '50vh' }}>
         <MDBCarouselItem itemId={1}>
           <div className="overlay"></div>

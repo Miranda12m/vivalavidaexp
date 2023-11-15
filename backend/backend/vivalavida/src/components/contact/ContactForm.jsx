@@ -79,59 +79,63 @@ function ContactForm() {
                   }
                 `}
       </style>
-
-      <form onSubmit={handleSubmit} style={{ maxWidth: '800px', margin: 'auto' }}>
-        <div className="row mb-3">
-          <div data-aos="fade-right" className={`form-group col-md-6 ${validation.name}`}>
-            <label htmlFor="name" className="form-label">
-              Nombre:
+      <div className='card' style={{borderBlockStartColor:'#cf6a00', borderBlockStartWidth: '5px', borderRadius:'1.2%',transform: 'translate(0%, -10%)', boxShadow:' 0px 0px 15px rgba(0, 0, 0, 0.3)' }}>
+      
+        <form onSubmit={handleSubmit} style={{ maxWidth: '1200px', marginLeft:'45px' }}>
+        <br></br><br></br>
+          <div className="row mb-3">
+            <div data-aos="fade-right" className={`form-group col-md-6 ${validation.name}`}>
+              <label htmlFor="name" className="form-label">
+                Name:
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className="form-control"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div data-aos="fade-left" className={`form-group col-md-6 ${validation.email}`}>
+              <label htmlFor="email" className="form-label">
+                Email:
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="form-control"
+                placeholder="Enter your email"
+              />
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+          </div>
+          <div data-aos="fade-up" className={`form-group mb-3 ${validation.message}`} >
+            <label htmlFor="message" className="form-label">
+            What's on your mind?
             </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
               onChange={handleChange}
               className="form-control"
-              placeholder="Ingrese su nombre"
+              placeholder="Please provide any detailes so we can help you"
+              style={{ height: '140px' }}
             />
           </div>
-          <div data-aos="fade-left" className={`form-group col-md-6 ${validation.email}`}>
-            <label htmlFor="email" className="form-label">
-              Correo electrónico:
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="form-control"
-              placeholder="Ingrese su correo electrónico"
-            />
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <div className="text-center" data-aos="fade-up">
+            <button type="submit" className="btn btn-primary button-hover">
+              Enviar
+            </button>
           </div>
-        </div>
-        <div data-aos="fade-up" className={`form-group mb-3 ${validation.message}`} >
-          <label htmlFor="message" className="form-label">
-            Mensaje:
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            className="form-control"
-            placeholder="Ingrese su mensaje"
-            style={{ height: '120px' }}
-          />
-        </div>
-        <div className="text-center" data-aos="fade-up">
-          <button type="submit" className="btn btn-primary button-hover">
-            Enviar
-          </button>
-        </div>
-      </form>
+          <br></br><br></br>
+        </form>
+      </div>
     </>
   );
 }
