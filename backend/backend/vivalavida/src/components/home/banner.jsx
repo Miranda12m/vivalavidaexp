@@ -46,11 +46,13 @@ export default function App() {
         <div className="row">
           <div className="col-md-12 text-white text-center" >
             <h1 className="m-b-20" >
-              <strong style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', fontSize: '2em', fontWeight:'bold', color: 'white'}}>VIVA LA VIDA<br />MEXICO EXPERIENCES</strong>
+              <strong style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', fontSize: '2em', fontWeight:'bold', color: 'white'}}>VIVA LA VIDA<br /></strong>
+              <strong style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',fontWeight:'bold', color: 'white'}}>MEXICO EXPERIENCES<br /></strong>
             </h1>
             <p className="m-b-40" style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', fontSize: '1.3em', fontWeight:'bold'}}>
               
             </p>
+            <br></br>
             <p>
               <button type="button" className="btn btn-success">Book your adventure now!</button>
             </p>

@@ -41,7 +41,7 @@ export default function Testimonials() {
       `}
       </style>
       <br></br><br></br><br></br><br></br>
-      <h1 class='text-center' data-aos="fade-right">Don't just take our words</h1>
+      <h1 class='text-center' data-aos="fade-right"><strong>Don't just take our words</strong></h1>
       <MDBContainer className="py-5" data-aos="zoom-in-up">
         <MDBCarousel showControls dark>
           <div className="carousel-inner">

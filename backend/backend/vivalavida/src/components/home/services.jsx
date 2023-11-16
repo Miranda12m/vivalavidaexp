@@ -31,7 +31,7 @@ export default function Services() {
                 `}
             </style>
            
-            <h1 style={{ textAlign: 'center', marginBottom: '2%', marginTop:'5%'}}>Services</h1>
+            <h1 style={{ textAlign: 'center', marginBottom: '2%', marginTop:'5%'}}><strong>Services</strong></h1>
 
 
             <div data-aos="zoom-in-down">
