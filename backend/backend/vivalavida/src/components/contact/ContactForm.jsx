@@ -81,10 +81,10 @@ function ContactForm() {
       </style>
       <div className='card' style={{borderBlockStartColor:'#cf6a00', borderBlockStartWidth: '5px', borderRadius:'1.2%',transform: 'translate(0%, -10%)', boxShadow:' 0px 0px 15px rgba(0, 0, 0, 0.3)' }}>
       
-        <form onSubmit={handleSubmit} style={{ maxWidth: '1200px', marginLeft:'45px' }}>
+        <form onSubmit={handleSubmit} style={{ maxWidth: '1200px', marginLeft:'45px', marginRight:'45px' }}>
         <br></br><br></br>
-          <div className="row mb-3">
-            <div data-aos="fade-right" className={`form-group col-md-6 ${validation.name}`}>
+          <div className="row mb-3" >
+            <div data-aos="fade-right" className={`form-group col-md-6 ${validation.name}`} style={{ marginBottom: '3%'}}>
               <label htmlFor="name" className="form-label">
                 Name:
               </label>

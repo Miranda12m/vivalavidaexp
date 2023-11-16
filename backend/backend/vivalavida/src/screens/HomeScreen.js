@@ -6,6 +6,8 @@ import Services from '../components/home/services';
 import { FaFacebook, FaTwitter, FaInstagram, FaEvernote } from 'react-icons/fa';
 import Alianzas from '../components/home/alianzas';
 import Testimonials from '../components/home/testimonials';
+import Qt from '../components/home/qt';
+import Team from '../components/home/team';
 function HomeScreen() {
   return (
     <>
@@ -14,10 +16,11 @@ function HomeScreen() {
       <Alianzas />
       <Services />
       <div style={{ backgroundColor: 'white' }}>
-  
+      
 
-
+      <Testimonials />
       </div>
+      <Qt />
       <br></br>
       <style>
         {`
@@ -33,8 +36,8 @@ function HomeScreen() {
           style={{
             display: 'flex',
             alignItems: 'center',
-            marginTop: '5%',
-            marginBottom: '5%',
+            marginTop: '3%',
+            marginBottom: '3%',
 
           }}
         >
@@ -96,7 +99,11 @@ function HomeScreen() {
 
         </div>
       </Container>
+      <div style={{ backgroundColor: 'white' }}>
+      
 
+      <Team />
+      </div>
       <InstagramEmbed />
     </>
 

@@ -7,12 +7,13 @@ function Qt() {
             <style>
                 {`
                     .qt-background {
-                        background: url(https://images.unsplash.com/photo-1542835435-4fa357baa00b?q=80&w=1991&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat;
+                        background: url(https://images.unsplash.com/photo-1512442827816-8e5a088619c9?q=80&w=2035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat ;
                         background-size: cover;
-                        padding: 300px 0;
+                        padding: 100px 0;
                         background-attachment: fixed;
                         background-position: center center;
                         position: relative;
+                        
                     }
 
                     .qt-background p {
@@ -35,8 +36,8 @@ function Qt() {
             <div className="qt-box qt-background">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-8 ml-auto mr-auto text-left">
-                            <p className="lead">
+                        <div className="col-md-8 ml-auto mr-auto text-left" data-aos="fade-right">
+                            <p className="lead" >
                                 " Discover a new Adventure! "
                             </p>
                             <span className="lead"> -Viva la vida</span>
