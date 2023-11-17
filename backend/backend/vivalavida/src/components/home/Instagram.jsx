@@ -67,7 +67,7 @@ function InstagramEmbed() {
         }
       `}
     </style>
-
+        <br></br><br></br><br></br>
     <Container>
       <div className="container mt-4" data-aos="fade-up">
         <h2 className="text-center mb-4">Instagram Gallery</h2>
