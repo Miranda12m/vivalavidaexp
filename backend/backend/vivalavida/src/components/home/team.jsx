@@ -33,9 +33,12 @@ export default function Team() {
         }
         
         .team .box {
-            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
             transition: all .5s ease-in-out;
             border-radius: 1.2%;
+        }
+        .team .box:hover{
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.3);
         }
         
         .team .box .image {
@@ -118,74 +121,74 @@ export default function Team() {
             </style>
             <div>
                 <section class="team" id="team">
-                    <div class="container text-center">
-                        <h2>Meet Our
+                    <div class="container text-center" >
+                        <h2 data-aos="fade-right">Meet Our
                             <span> Team</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        <p data-aos="fade-right">  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                             <br />incididunt ut labore et dolore magna aliqua.</p>
-                        <div class="row">
+                        <div class="row" data-aos="fade-up">
 
                             <div class="col-lg-3 col-md-6">
                                 <div class="box">
                                     <div class="image">
-                                        <img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="team" class="img-fluid"  style={{ borderRadius: '2%'}}/>
-                                            <div class="social-icons">
-                                                <a href="#"><FaFacebook size={20} className="icons" /></a>
-                                                <a href="#"><FaInstagram size={20} style={{marginLeft: '15px', marginRight: '15px'}} className="icons" /></a>
-                                                <a href="#"><FaTwitter size={20} className="icons"/></a>
-                                            </div>
-                                            <div class="overlay"></div>
-                                    </div>
-                                    <h3>Lorem Ipsum</h3>
-                                    <h4>Project Manager</h4>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <div class="box">
-                                    <div class="image">
-                                        <img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="team" class="img-fluid" style={{ borderRadius: '2%'}}/>
-                                            <div class="social-icons">
+                                        <img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="team" class="img-fluid" style={{ borderRadius: '2%' }} />
+                                        <div class="social-icons">
                                             <a href="#"><FaFacebook size={20} className="icons" /></a>
-                                                <a href="#"><FaInstagram size={20} style={{marginLeft: '15px', marginRight: '15px'}} className="icons"/></a>
-                                                <a href="#"><FaTwitter size={20} className="icons"/></a>
-                                            </div>
-                                            <div class="overlay"></div>
+                                            <a href="#"><FaInstagram size={20} style={{ marginLeft: '15px', marginRight: '15px' }} className="icons" /></a>
+                                            <a href="#"><FaTwitter size={20} className="icons" /></a>
+                                        </div>
+                                        <div class="overlay"></div>
                                     </div>
                                     <h3>Lorem Ipsum</h3>
-                                    <h4>App Developer</h4>
+                                    <h4>Lorem Ipsum</h4>
                                 </div>
                             </div>
 
                             <div class="col-lg-3 col-md-6">
                                 <div class="box">
                                     <div class="image">
-                                        <img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="team" class="img-fluid" style={{ borderRadius: '2%'}} />
-                                            <div class="social-icons">
-                                            <a href="#"><FaFacebook size={20}  className="icons"/></a>
-                                                <a href="#"><FaInstagram size={20} style={{marginLeft: '15px', marginRight: '15px'}} className="icons"/></a>
-                                                <a href="#"><FaTwitter size={20} className="icons"/></a>
-                                            </div>
-                                            <div class="overlay"></div>
+                                        <img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="team" class="img-fluid" style={{ borderRadius: '2%' }} />
+                                        <div class="social-icons">
+                                            <a href="#"><FaFacebook size={20} className="icons" /></a>
+                                            <a href="#"><FaInstagram size={20} style={{ marginLeft: '15px', marginRight: '15px' }} className="icons" /></a>
+                                            <a href="#"><FaTwitter size={20} className="icons" /></a>
+                                        </div>
+                                        <div class="overlay"></div>
                                     </div>
                                     <h3>Lorem Ipsum</h3>
-                                    <h4>Front End</h4>
+                                    <h4>Lorem Ipsum</h4>
                                 </div>
                             </div>
 
                             <div class="col-lg-3 col-md-6">
                                 <div class="box">
                                     <div class="image">
-                                        <img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="team" class="img-fluid" style={{ borderRadius: '2%'}}/>
-                                            <div class="social-icons">
-                                            <a href="#"><FaFacebook size={20}  className="icons" /></a>
-                                                <a href="#"><FaInstagram size={20} style={{marginLeft: '15px', marginRight: '15px'}}className="icons"/></a>
-                                                <a href="#"><FaTwitter size={20} className="icons"/></a>
-                                            </div>
-                                            <div class="overlay"></div>
+                                        <img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="team" class="img-fluid" style={{ borderRadius: '2%' }} />
+                                        <div class="social-icons">
+                                            <a href="#"><FaFacebook size={20} className="icons" /></a>
+                                            <a href="#"><FaInstagram size={20} style={{ marginLeft: '15px', marginRight: '15px' }} className="icons" /></a>
+                                            <a href="#"><FaTwitter size={20} className="icons" /></a>
+                                        </div>
+                                        <div class="overlay"></div>
                                     </div>
                                     <h3>Lorem Ipsum</h3>
-                                    <h4>Web designer</h4>
+                                    <h4>Lorem Ipsum</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="box">
+                                    <div class="image">
+                                        <img src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="team" class="img-fluid" style={{ borderRadius: '2%' }} />
+                                        <div class="social-icons">
+                                            <a href="#"><FaFacebook size={20} className="icons" /></a>
+                                            <a href="#"><FaInstagram size={20} style={{ marginLeft: '15px', marginRight: '15px' }} className="icons" /></a>
+                                            <a href="#"><FaTwitter size={20} className="icons" /></a>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </div>
+                                    <h3>Lorem Ipsum</h3>
+                                    <h4>Lorem Ipsum</h4>
                                 </div>
                             </div>
                         </div>

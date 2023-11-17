@@ -6,7 +6,7 @@ function InstagramEmbed() {
   const [instaData, setInstaData] = useState([]);
 
   async function getInstaFeed() {
-    const token = 'IGQWRQaE9kNy1Kd3V1UmlpMWhwZAzg5YmFCZAnVxZAFVrd1Fua3FXcjFmZA0xqVVhDNkFCMUNHZADBWRW5XeDdINzdFbm9yS055ZAWsyUVI1Q2ppc196N29JcGVkbko1U0c2ODU5VVlRc09PeDhrZA081eHd5eUdFNElZAU0EZD';
+    const token = 'token';
     const fields = "caption,media_url,media_type,permalink,timestamp";
     const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=${fields}`;
 
@@ -31,6 +31,8 @@ function InstagramEmbed() {
         .mdbs-card {
           position: relative;
           overflow: hidden;
+          border-radius: 2%;
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
         }
 
         .mdbs-card:hover::after {
@@ -41,6 +43,7 @@ function InstagramEmbed() {
           right: 0;
           height: 33%;
           background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0,0.7));
+          transition: opacity 0.3s ease, z-index 0.5s ease;
         }
 
         .caption-overlay {
@@ -51,7 +54,7 @@ function InstagramEmbed() {
           padding: 10px;
           color: #fff;
           opacity: 0; /* Inicialmente, el texto del caption no es visible */
-          transition: opacity 0.3s ease, z-index 0.3s ease; /* Añadir transición para suavizar la aparición/desaparición */
+          transition: opacity 0.3s ease, z-index 0.5s ease; /* Añadir transición para suavizar la aparición/desaparición */
           z-index: -1; /* Posicionar por debajo del sombreado inicialmente */
         }
 
@@ -69,11 +72,12 @@ function InstagramEmbed() {
     </style>
         <br></br><br></br><br></br>
     <Container>
-      <div className="container mt-4" data-aos="fade-up">
-        <h2 className="text-center mb-4">Instagram Gallery</h2>
+      <div className="container mt-4" >
+        <h1 className="text-center mb-4" data-aos="fade-right"><strong>Instagram Gallery</strong></h1>
+        <br></br><br></br>
         <div className="row">
           {instaData.slice(0, 9).map((item) => (
-            <div key={item.id} className="col-md-4 mb-4">
+            <div key={item.id} className="col-md-4 mb-4" data-aos="fade-up">
               <a href={item.permalink} target="_blank" rel="noopener noreferrer" className="gallery-item">
                 <div className="card mdb-card mdbs-card">
                   {item.media_type === 'VIDEO' ? (

@@ -41,7 +41,8 @@ function HomeScreen() {
 
           }}
         >
-          <Row>
+          <Row style={{borderTop: '3px solid', borderBottom: '3px solid'}}>
+            
             <Col>
               <div data-aos="fade-right"
                 style={{
@@ -101,6 +102,7 @@ function HomeScreen() {
       <Team />
       </div>
       <InstagramEmbed />
+      <br></br><br></br><br></br><br></br>
     </>
 
   );
