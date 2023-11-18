@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 //
 import HomeScreen from "./screens/HomeScreen";
 import ContactScreen from "./screens/ContactScreen";
-import TourScreen from "./screens/TourScreen"
+import ServicesScreen from "./screens/ServicesScreen"
 //
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -33,7 +33,7 @@ function App() {
 
           <Route path="/home" element={<HomeScreen />} />
           <Route path="/contact" element={<ContactScreen />} />
-            <Route path="/services" element={<TourScreen />} />
+            <Route path="/services" element={<ServicesScreen />} />
         </Routes>
 
       </main>
