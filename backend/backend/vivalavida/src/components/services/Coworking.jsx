@@ -47,7 +47,7 @@ function Coworking({ coworking}) {
               alt={coworking.title}
             />
           </div>
-          <Link to={coworking.socials}>
+          <Link to={coworking.socials} target="_blank" rel="noopener noreferrer">
             <button className="btn btn-primary button-hover" type="button" style={{ display: 'block', margin: 'auto' }}>See more</button>
           </Link>
           <br></br>
