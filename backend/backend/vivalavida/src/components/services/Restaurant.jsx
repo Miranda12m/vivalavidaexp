@@ -31,7 +31,7 @@ function Restaurant({ restaurant }) {
       </style>
       <div style={{borderBottom:'1px solid #2f2f2f'}}>
         <h2 style={{marginTop:'15px'}}><strong>{restaurant.title}</strong></h2>
-        <p> {restaurant.description}</p>
+        <p style={{marginLet:'20%', marginRight:'20%'}}> {restaurant.description}</p>
         <Row style={{marginTop:'5%', marginBottom:'5%', marginLeft:'10%', marginRight:'10%', verticalAlign: 'center', margin: 'auto', alignSelf: 'center'}}>
           <Col>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
@@ -42,12 +42,10 @@ function Restaurant({ restaurant }) {
               {restaurant.location}
             </p>  
           </Col>
-          <Col>
-            <Link to={restaurant.socials} >
+        </Row>
+        <Link to={restaurant.socials} >
               <button className="btn btn-primary button-hover" type="button" style={{ verticalAlign: 'center', margin: 'auto', alignSelf: 'center' }}>See more</button>
             </Link>
-          </Col>
-        </Row>
         <br></br>
         <img src={restaurant.image} position='top' style={{ borderRadius: "1.2%", width: "100wh", minWidth:'400px', objectFit:'cover', height:'50vh', verticalAlign: 'center', margin: '30px', alignSelf: 'center' }} alt={restaurant.title}></img>
       </div>
