@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Container, Row, Col, Card } from "react-bootstrap";
-
+import Navbars from "../../components/services/navbars";
+import BannerHot from "../../components/services/bannerservices/bannerhot";
 function HotelsScreen() {
   const [hotels, setHotels] = useState([]);
 
@@ -19,6 +20,9 @@ function HotelsScreen() {
   }, []); // Eldiablo
 
   return (
+    <>
+    <BannerHot />
+    <Navbars />
     <Container>
       <h1
         data-aos="fade-right"
@@ -49,6 +53,7 @@ function HotelsScreen() {
         ))}
       </Row>
     </Container>
+    </>
   );
 }
 
