@@ -30,7 +30,7 @@ function Restaurant({ restaurant }) {
                 `}
       </style>
       <div style={{borderBottom:'1px solid #2f2f2f', borderTop:'1px solid #2f2f2f'}}>
-        <h2><strong>{restaurant.title}</strong></h2>
+        <h2 style={{marginTop:'5%'}}><strong>{restaurant.title}</strong></h2>
         <p> {restaurant.description}</p>
         <Row style={{marginTop:'5%', marginBottom:'5%', marginLeft:'10%', marginRight:'10%', verticalAlign: 'center', margin: 'auto', alignSelf: 'center'}}>
           <Col>
@@ -46,12 +46,10 @@ function Restaurant({ restaurant }) {
             </Link>
           </Col>
         </Row>
-        <img src={restaurant.image} position='top' style={{ borderRadius: "1.2%", width: "100wh", minWidth:'400px', objectFit:'cover', height:'50vh' }} alt={restaurant.title}></img>
+        <br></br>
+        <img src={restaurant.image} position='top' style={{ borderRadius: "1.2%", width: "100wh", minWidth:'400px', objectFit:'cover', height:'50vh', verticalAlign: 'center', margin: '7%', alignSelf: 'center' }} alt={restaurant.title}></img>
       </div>
 
-
-
-      <br></br>
       <br></br>
     </>
   );
