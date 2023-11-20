@@ -9,7 +9,7 @@ import {
   MDBCardImage,
 } from 'mdb-react-ui-kit';
 
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 function Restaurant({ restaurant }) {
   return (
     <>
@@ -29,6 +29,7 @@ function Restaurant({ restaurant }) {
 
                 `}
       </style>
+      <Container>
       <div style={{borderBottom:'1px solid #2f2f2f'}}>
         <h2><strong>{restaurant.title}</strong></h2>
         <p style={{marginLet:'20%', marginRight:'20%'}}> {restaurant.description}</p>
@@ -38,19 +39,20 @@ function Restaurant({ restaurant }) {
               <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
               <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" style={{marginRight:'4px'}}/>
             </svg>
-            <p>
-              {restaurant.location}
-            </p>  
+              {restaurant.location}  
           </Col>
         </Row>
         <Link to={restaurant.socials} >
               <button className="btn btn-primary button-hover" type="button" style={{ verticalAlign: 'center', margin: 'auto', alignSelf: 'center' }}>See more</button>
             </Link>
         <br></br>
-        <img src={restaurant.image} position='top' style={{ borderRadius: "1.2%", width: "100wh", minWidth:'400px', objectFit:'cover', height:'50vh', verticalAlign: 'center', margin: '30px', alignSelf: 'center' }} alt={restaurant.title}></img>
+        <div style={{ verticalAlign: 'center', margin: 'auto', alignSelf: 'center' }}> 
+        <img src={restaurant.image} position='top' style={{ borderRadius: "1.2%", width: "100wh", minWidth:'400px', objectFit:'cover', height:'50vh', verticalAlign: 'center', margin: '30px', alignSelf: 'center', boxShadow:' 0px 0px 15px rgba(0, 0, 0, 0.3)' }} alt={restaurant.title}></img>
+        </div>
       </div>
 
       <br></br>
+      </Container>
     </>
   );
 }
