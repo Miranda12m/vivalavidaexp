@@ -6,7 +6,7 @@ import Restaurant from '../components/services/Restaurant';
 import Coworking from '../components/services/Coworking';
 import LocalConsume from '../components/services/LocalConsume';
 import Hotels from '../components/services/Hotels';
-import { useNavigate } from 'react-router-dom'; // Asegúrate de tener esto importado
+import { useNavigate } from 'react-router-dom'; 
 import BannerServices from '../components/services/banners';
 
 function ServicesScreen() {
