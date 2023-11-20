@@ -35,7 +35,6 @@ function App() {
             path="/"
             element={<Navigate to="/home" replace />}
           />
-
           <Route path="/home" element={<HomeScreen />} />
           <Route path="/contact" element={<ContactScreen />} />
           <Route path="/services" element={<ServicesScreen />} />
