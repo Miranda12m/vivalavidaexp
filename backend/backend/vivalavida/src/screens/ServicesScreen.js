@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import Tour from '../components/services/Tour';
-import { Container, Row, Col } from 'react-bootstrap';
-import BannerServices from '../components/services/banners';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import Tour from "../components/services/Tour";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import BannerServices from "../components/services/banners";
 
 function ServicesScreen() {
   const [tours, setTours] = useState([]);
@@ -10,10 +10,10 @@ function ServicesScreen() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const toursResponse = await axios.get('/tours/api/v1/tours/');
+        const toursResponse = await axios.get("/tours/api/v1/tours/");
         setTours(toursResponse.data);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
 
@@ -28,7 +28,12 @@ function ServicesScreen() {
         <br />
         <br />
 
-        <h1 data-aos="fade-right" style={{borderBottom:'1px solid #2f2f2f', marginBottom:'15px'}}><strong>Know About Our Services</strong></h1>
+        <h1
+          data-aos="fade-right"
+          style={{ borderBottom: "1px solid #2f2f2f", marginBottom: "15px" }}
+        >
+          <strong>Know About Our Services</strong>
+        </h1>
         <br />
         <br />
 
@@ -42,8 +47,68 @@ function ServicesScreen() {
           ))}
         </Row>
         <br />
-        <h1 data-aos="fade-right" style={{borderBottom:'1px solid #2f2f2f', marginBottom:'15px'}}><strong>Our Recomendations</strong></h1>
+        <h1
+          data-aos="fade-right"
+          style={{ borderBottom: "1px solid #2f2f2f", marginBottom: "15px" }}
+        >
+          <strong>Our Recomendations</strong>
+        </h1>
         <br />
+        <div className="card-list">
+          <Card className="border-success mb-3" style={{ maxWidth: "20rem" }}>
+            <Card.Header>Header 1</Card.Header>
+            <Card.Body>
+              <Card.Title>Success Card Title 1</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </Card.Text>
+              <Button
+                variant="primary"
+                href="https://example.com/card1"
+                target="_blank"
+              >
+                Go to Card 1
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="border-success mb-3" style={{ maxWidth: "20rem" }}>
+            <Card.Header>Header 2</Card.Header>
+            <Card.Body>
+              <Card.Title>Success Card Title 2</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </Card.Text>
+              <Button
+                variant="primary"
+                href="https://example.com/card2"
+                target="_blank"
+              >
+                Go to Card 2
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="border-success mb-3" style={{ maxWidth: "20rem" }}>
+            <Card.Header>Header 3</Card.Header>
+            <Card.Body>
+              <Card.Title>Success Card Title 3</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </Card.Text>
+              <Button
+                variant="primary"
+                href="https://example.com/card3"
+                target="_blank"
+              >
+                Go to Card 3
+              </Button>
+            </Card.Body>
+          </Card>
+        </div>
         <br />
       </Container>
     </>
