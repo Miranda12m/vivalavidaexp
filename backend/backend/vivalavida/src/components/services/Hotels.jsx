@@ -1,16 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaTwitter, FaInstagram, FaEvernote } from 'react-icons/fa';
-import { Container, Row, Col, Card, Image } from 'react-bootstrap';
-
-
-import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardImage,
-} from 'mdb-react-ui-kit';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 function Hotels({ hotels }) {
   return (
@@ -41,7 +31,7 @@ function Hotels({ hotels }) {
                 src={hotels.image}
                 alt={hotels.title}
                 fluid
-                style={{ borderRadius: "1.2%" }}
+                style={{ borderRadius: "1.2%", objectFit: 'cover' }}
               />
             </Col>
             <Col md={7}>
