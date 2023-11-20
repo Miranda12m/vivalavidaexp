@@ -47,7 +47,7 @@ function Restaurant({ restaurant }) {
           <div style={{ textAlign: 'center' }}>
             <img
               src={restaurant.image}
-              style={{ borderRadius: "1.2%", width: "100%", minWidth: '85px', objectFit: 'cover', height: '30vh', margin: '30px', boxShadow: '0px 0px 15px rgba(0, 0, 0, 0.3)' }}
+              style={{ borderRadius: "1.2%", width: "75%", minWidth: '400px', objectFit: 'cover', height: '30vh', margin: '30px', boxShadow: '0px 0px 15px rgba(0, 0, 0, 0.3)' }}
               alt={restaurant.title}
             />
           </div>
