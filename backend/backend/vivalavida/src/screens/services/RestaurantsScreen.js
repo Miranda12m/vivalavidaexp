@@ -31,13 +31,14 @@ function RestaurantScreen() {
         <br></br>
         <Row data-aos="zoom-in">
           {restaurants
-            .sort((a, b) => new Date(a.date) - new Date(b.date)) // Cambiado el orden de la comparación
+            .sort((a, b) => b.id - a.id) // Cambiado el orden de la comparación por el ID
             .map((restaurant) => (
               <div key={restaurant.id}>
                 <Restaurant restaurant={restaurant} />
               </div>
             ))}
         </Row>
+
 
         <br />
         <br />
