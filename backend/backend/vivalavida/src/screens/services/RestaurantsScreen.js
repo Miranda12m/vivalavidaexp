@@ -21,24 +21,26 @@ function RestaurantScreen() {
 
   return (
     <>
-    <BannerRes />
-    <Container>
-      <br />
-      <br />
-      <br />
+      <BannerRes />
+      <Container>
+        <br />
+        <br />
+        <br />
 
-      <h1 data-aos="fade-right">Restaurants</h1>
-      <br></br>
-      <Row data-aos="zoom-in">
-        {restaurants.map((restaurant) => (
-          <Col key={restaurant.id} >
-            <Restaurant restaurant={restaurant} />
-          </Col>
-        ))}
-      </Row>
-      <br />
-      <br />
-    </Container>
+        <h1 data-aos="fade-right"><strong>Restaurants</strong></h1>
+        <br></br>
+        <Row data-aos="zoom-in">
+          {restaurants
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .map((restaurant) => (
+              <Col key={restaurant.id}>
+                <Restaurant restaurant={restaurant} />
+              </Col>
+            ))}
+        </Row>
+        <br />
+        <br />
+      </Container>
     </>
   );
 }
