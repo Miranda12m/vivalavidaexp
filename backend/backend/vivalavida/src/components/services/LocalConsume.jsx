@@ -32,7 +32,7 @@ function LocalConsume({ localconsume}) {
       
         <Link to={localconsume.socials}>
           <MDBCard className="mdb-card rounded" style={{ height: "540px", width: '400px' }}>
-            <MDBCardImage src={localconsume.image} position='top' style={{ borderRadius: "6.6%", height: "260px" }} alt={localconsume.title} />
+            <MDBCardImage src={localconsume.image} position='top' style={{ borderRadius: "1.2%", height: "260px" }} alt={localconsume.title} />
             <MDBCardBody>
               <MDBCardTitle>{localconsume.title}</MDBCardTitle>
               <MDBCardText>

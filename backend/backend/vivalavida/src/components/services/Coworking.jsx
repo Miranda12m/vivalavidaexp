@@ -32,7 +32,7 @@ function Coworking({ coworking}) {
       
         <Link to={coworking.socials}>
           <MDBCard className="mdb-card rounded" style={{ height: "540px", width: '400px' }}>
-            <MDBCardImage src={coworking.image} position='top' style={{ borderRadius: "6.6%", height: "260px" }} alt={coworking.title} />
+            <MDBCardImage src={coworking.image} position='top' style={{ borderRadius: "1.2", height: "260px" }} alt={coworking.title} />
             <MDBCardBody>
               <MDBCardTitle>{coworking.title}</MDBCardTitle>
               <MDBCardText>
