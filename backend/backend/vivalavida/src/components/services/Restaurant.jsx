@@ -35,7 +35,6 @@ function Restaurant({ restaurant }) {
             </Col>
           </Row>
           <br />
-
           <div style={{ textAlign: 'center' }}>
             <img
               src={restaurant.image}
@@ -48,9 +47,6 @@ function Restaurant({ restaurant }) {
           </Link>
           <br></br>
         </div>
-        
-
-
     </>
   );
 }

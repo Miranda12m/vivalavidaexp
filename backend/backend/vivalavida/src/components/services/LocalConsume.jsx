@@ -23,8 +23,6 @@ function LocalConsume({ localconsume}) {
                 `}
       </style>
 
-    
-        
         <div style={{ borderBottom: '1px solid #2f2f2f' }}>
           <h2 style={{ marginLeft: '10%', marginRight: '10%', marginTop:'15px' }} ><strong>{localconsume.title}</strong></h2>
           <p style={{ marginLeft: '10%', marginRight: '10%' }}>{localconsume.description}</p>
@@ -38,7 +36,6 @@ function LocalConsume({ localconsume}) {
             </Col>
           </Row>
           <br />
-
           <div style={{ textAlign: 'center' }}>
             <img
               src={localconsume.image}

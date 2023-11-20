@@ -23,9 +23,6 @@ function Coworking({ coworking}) {
                 `}
       </style>
 
-    
-
-
         <div style={{ borderBottom: '1px solid #2f2f2f' }}>
           <h2 style={{ marginLeft: '10%', marginRight: '10%', marginTop:'15px' }} ><strong>{coworking.title}</strong></h2>
           <p style={{ marginLeft: '10%', marginRight: '10%' }}>{coworking.description}</p>
@@ -39,7 +36,6 @@ function Coworking({ coworking}) {
             </Col>
           </Row>
           <br />
-
           <div style={{ textAlign: 'center' }}>
             <img
               src={coworking.image}
@@ -52,7 +48,6 @@ function Coworking({ coworking}) {
           </Link>
           <br></br>
         </div>
-        
     </>
   );
 }
