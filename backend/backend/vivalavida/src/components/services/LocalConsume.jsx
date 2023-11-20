@@ -46,7 +46,7 @@ function LocalConsume({ localconsume}) {
               alt={localconsume.title}
             />
           </div>
-          <Link to={localconsume.socials}>
+          <Link to={localconsume.socials} target="_blank" rel="noopener noreferrer">
             <button className="btn btn-primary button-hover" type="button" style={{ display: 'block', margin: 'auto' }}>See more</button>
           </Link>
           <br></br>
