@@ -27,7 +27,6 @@ function Hotels({ hotels }) {
           <Row noGutters>
             <Col md={4}>
               <img
-
                 src={hotels.image}
                 alt={hotels.title}
                 fluid
@@ -58,7 +57,6 @@ function Hotels({ hotels }) {
                         See more
                       </button>
                     </Link>
-
                   </Col>
                 </Row>
               </Card.Body>
