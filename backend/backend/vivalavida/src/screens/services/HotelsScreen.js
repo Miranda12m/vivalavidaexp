@@ -3,7 +3,10 @@ import axios from "axios";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Navbars from "../../components/services/navbars";
 import BannerHot from "../../components/services/bannerservices/bannerhot";
+import { Link } from "react-router-dom";
+
 function HotelsScreen() {
+
   const [hotels, setHotels] = useState([]);
 
   useEffect(() => {
@@ -33,6 +36,7 @@ function HotelsScreen() {
       <br />
 
       {/* Hotels Section */}
+      <Link to="{hotels.socials}">
       <Row data-aos="zoom-in">
         {hotels.map((hotels) => (
           <Col key={hotels.id} xs={12} sm={6} md={4} lg={4}>
@@ -50,6 +54,7 @@ function HotelsScreen() {
           </Col>
         ))}
       </Row>
+      </Link>
     </Container>
     </>
   );
