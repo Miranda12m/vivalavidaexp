@@ -35,13 +35,12 @@ function ServicesScreen() {
         {/* Tours Section */}
         <h2>Tours</h2>
         <Row data-aos="zoom-in">
-        {tours.map((tour) => (
-          <Col key={tour.id} xs={12} sm={6} md={4} lg={4}>
-            <Tour tour={tour} />
-          </Col>
-        ))}
-      </Row>
-
+          {tours.map((tour) => (
+            <Col key={tour.id} xs={12} sm={6} md={4} lg={4}>
+              <Tour tour={tour} />
+            </Col>
+          ))}
+        </Row>
         <br />
         <br />
       </Container>
