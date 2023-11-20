@@ -27,17 +27,18 @@ function RestaurantScreen() {
         <br />
         <br />
 
-        <h1 data-aos="fade-right" style={{borderBottom:'1px solid #2f2f2f', marginBottom:'15px'}}><strong>Restaurants</strong></h1>
+        <h1 data-aos="fade-right" style={{ borderBottom: '1px solid #2f2f2f', marginBottom: '15px' }}><strong>Restaurants</strong></h1>
         <br></br>
         <Row data-aos="zoom-in">
           {restaurants
-            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .sort((a, b) => new Date(a.date) - new Date(b.date)) // Cambiado el orden de la comparación
             .map((restaurant) => (
-              <div key={restaurant.id} >
+              <div key={restaurant.id}>
                 <Restaurant restaurant={restaurant} />
               </div>
             ))}
         </Row>
+
         <br />
         <br />
       </Container>
