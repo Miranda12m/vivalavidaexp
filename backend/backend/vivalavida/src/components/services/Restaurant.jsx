@@ -29,9 +29,9 @@ function Restaurant({ restaurant }) {
 
                 `}
       </style>
-      <Container>
+  
         <div style={{ borderBottom: '1px solid #2f2f2f' }}>
-          <h2 style={{ textAlign: 'center' }}><strong>{restaurant.title}</strong></h2>
+          <h2><strong>{restaurant.title}</strong></h2>
           <p style={{ marginLeft: '20%', marginRight: '20%' }}>{restaurant.description}</p>
           <Row style={{ marginTop: '5%', marginBottom: '5%', marginLeft: '10%', marginRight: '10%', alignItems: 'center' }}>
             <Col>
@@ -56,7 +56,7 @@ function Restaurant({ restaurant }) {
           </Link>
         </div>
         <br />
-      </Container>
+
 
     </>
   );
