@@ -1,15 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Col, Row  } from "react-bootstrap";
 
-import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardImage,
-} from 'mdb-react-ui-kit';
-
-import { Col, Row, Container } from "react-bootstrap";
 function Restaurant({ restaurant }) {
   return (
     <>
