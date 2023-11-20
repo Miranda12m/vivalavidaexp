@@ -32,7 +32,7 @@ function Tour({ tour }) {
       
         <Link to={tour.url}>
           <MDBCard className="mdb-card rounded" style={{ height: "540px", width: '400px' }}>
-            <MDBCardImage src={tour.image} position='top' style={{ borderRadius: "6.6%", height: "260px" }} alt={tour.title} />
+            <MDBCardImage src={tour.image} position='top' style={{ borderRadius: "1.2%", height: "260px" }} alt={tour.title} />
             <MDBCardBody>
               <MDBCardTitle>{tour.title}</MDBCardTitle>
               <MDBCardText>

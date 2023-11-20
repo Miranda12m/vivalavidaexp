@@ -32,7 +32,7 @@ function Hotels({ hotels}) {
       
         <Link to={hotels.socials}>
           <MDBCard className="mdb-card rounded" style={{ height: "540px", width: '400px' }}>
-            <MDBCardImage src={hotels.image} position='top' style={{ borderRadius: "6.6%", height: "260px" }} alt={hotels.title} />
+            <MDBCardImage src={hotels.image} position='top' style={{ borderRadius: "1.2%", height: "260px" }} alt={hotels.title} />
             <MDBCardBody>
               <MDBCardTitle>{hotels.title}</MDBCardTitle>
               <MDBCardText>

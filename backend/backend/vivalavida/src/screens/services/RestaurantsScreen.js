@@ -30,7 +30,7 @@ function RestaurantScreen() {
       <h1 data-aos="fade-right">Restaurants</h1>
       <Row data-aos="zoom-in">
         {restaurants.map((restaurant) => (
-          <Col key={restaurant.id} xs={12} sm={6} md={4} lg={4}>
+          <Col key={restaurant.id} >
             <Restaurant restaurant={restaurant} />
           </Col>
         ))}
