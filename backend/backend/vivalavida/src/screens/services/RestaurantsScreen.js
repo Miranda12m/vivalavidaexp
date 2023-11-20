@@ -28,6 +28,7 @@ function RestaurantScreen() {
       <br />
 
       <h1 data-aos="fade-right">Restaurants</h1>
+      <br></br>
       <Row data-aos="zoom-in">
         {restaurants.map((restaurant) => (
           <Col key={restaurant.id} >
@@ -35,6 +36,8 @@ function RestaurantScreen() {
           </Col>
         ))}
       </Row>
+      <br />
+      <br />
     </Container>
     </>
   );
