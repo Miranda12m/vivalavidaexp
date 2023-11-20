@@ -36,7 +36,7 @@ function Hotels({ hotels }) {
         <Card className="my-4 p-3" data-aos="fade-right" style={{ boxShadow: ' 0px 0px 15px rgba(0, 0, 0, 0.3)' }}>
           <Row noGutters>
             <Col md={4}>
-              <Image
+              <img
 
                 src={hotels.image}
                 alt={hotels.title}
