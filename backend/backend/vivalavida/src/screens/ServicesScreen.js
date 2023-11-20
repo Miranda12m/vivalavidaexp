@@ -2,25 +2,13 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Tour from '../components/services/Tour';
 import { Container, Row, Col } from 'react-bootstrap';
-import Restaurant from '../components/services/Restaurant';
-import Coworking from '../components/services/Coworking';
-import LocalConsume from '../components/services/LocalConsume';
-import Hotels from '../components/services/Hotels';
 import { useNavigate } from 'react-router-dom'; 
 import BannerServices from '../components/services/banners';
 
 function ServicesScreen() {
   const [tours, setTours] = useState([]);
-  const [restaurants, setRestaurants] = useState([]);
-  const [coworkings, setCoworkings] = useState([]);
-  const [localconsumes, setLocalConsumes] = useState([]);
-  const [hotels, setHotels] = useState([]);
 
   const [showAllTours, setShowAllTours] = useState(false);
-  const [showAllRestaurants, setShowAllRestaurants] = useState(false);
-  const [showAllCoworkings, setShowAllCoworkings] = useState(false);
-  const [showAllLocalConsumes, setShowAllLocalConsumes] = useState(false);
-  const [showAllHotels, setShowAllHotels] = useState(false);
 
   const navigate = useNavigate(); 
 
@@ -29,15 +17,6 @@ function ServicesScreen() {
       try {
         const toursResponse = await axios.get('/tours/api/v1/tours/');
         setTours(toursResponse.data);
-        const restaurantsResponse = await axios.get('/tours/api/v1/restaurants/');
-        setRestaurants(restaurantsResponse.data);
-        const coworkingsResponse = await axios.get('/tours/api/v1/coworkings/');
-        setCoworkings(coworkingsResponse.data);
-        const localconsumesResponse = await axios.get('/tours/api/v1/localconsumes/');
-        setLocalConsumes(localconsumesResponse.data);
-        const hotelsResponse = await axios.get('/tours/api/v1/hotels/');
-        setHotels(hotelsResponse.data);
-
       } catch (error) {
         console.error('Error fetching data:', error);
       }
