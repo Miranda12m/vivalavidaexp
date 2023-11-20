@@ -12,7 +12,7 @@ import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 function Recomendation() {
     AOS.init();
-    return (
+  return (
         <>
             <style>
                 {`
