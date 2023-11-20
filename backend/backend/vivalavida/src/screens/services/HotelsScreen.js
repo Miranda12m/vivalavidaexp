@@ -26,15 +26,17 @@ function HotelScreen() {
       <br />
       <br />
       <br />
-
-      <h1 data-aos="fade-right">Hotels</h1>
-      <Row data-aos="zoom-in">
-        {hotels.map((hotel) => (
-          <Col key={hotel.id} xs={12} sm={6} md={4} lg={4}>
-            <Hotels hotel={hotel} />
-          </Col>
-        ))}
-      </Row>
+      <h1 data-aos="fade-right" style={{ borderBottom: '1px solid #2f2f2f', marginBottom: '15px' }}><strong>Hotels</strong></h1>
+        <br></br>
+        <Row data-aos="zoom-in">
+          {hotels
+            .sort((a, b) => b.id - a.id) // Cambiado el orden de la comparación por el ID
+            .map((hotel) => (
+              <div key={hotel.id}>
+                <Hotels hotel={hotel} />
+              </div>
+            ))}
+        </Row>
     </Container>
     </>
   );
