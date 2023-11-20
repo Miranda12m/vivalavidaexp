@@ -2,7 +2,7 @@ import React from 'react'
 
 function AllServScreen() {
   return (
-    <div>AllServScreen</div>
+    <div>AllServScreen, no llegan los cummits</div>
   )
 }
 
