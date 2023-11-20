@@ -33,9 +33,9 @@ function RestaurantScreen() {
           {restaurants
             .sort((a, b) => new Date(b.date) - new Date(a.date))
             .map((restaurant) => (
-              <Col key={restaurant.id}>
+              <div key={restaurant.id} >
                 <Restaurant restaurant={restaurant} />
-              </Col>
+              </div>
             ))}
         </Row>
         <br />
