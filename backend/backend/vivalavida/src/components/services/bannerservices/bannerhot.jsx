@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBCarousel, MDBCarouselItem } from 'mdb-react-ui-kit';
 
-function BannerServices() {
+function BannerHot() {
   return (
     <>
       <style>
@@ -18,7 +18,7 @@ function BannerServices() {
         <MDBCarouselItem itemId={1}>
           <div className="overlay"></div>
           <img
-            src='https://images.unsplash.com/photo-1501855901885-8b29fa615daf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            src='https://images.unsplash.com/photo-1606046604972-77cc76aee944?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
             className='d-block vw-100'
             alt='...'
           />
@@ -26,7 +26,7 @@ function BannerServices() {
         <MDBCarouselItem itemId={2}>
           <div className="overlay"></div>
           <img
-            src='https://images.unsplash.com/photo-1562218355-1fde5256182d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            src='https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
             className='d-block vw-100'
             alt='...'
           />
@@ -34,7 +34,7 @@ function BannerServices() {
         <MDBCarouselItem itemId={3}>
           <div className="overlay"></div>
           <img
-            src='https://images.unsplash.com/photo-1504814532849-cff240bbc503?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1leGljb3xlbnwwfDB8MHx8fDA%3D'
+            src='https://images.unsplash.com/photo-1506059612708-99d6c258160e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
             className='d-block vw-100'
             alt='...'
           />
@@ -45,7 +45,7 @@ function BannerServices() {
         <div className="row">
           <div className="col-md-12 text-white text-center" data-aos="fade-right">
             <h1 className="m-b-20" >
-              <strong style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', fontSize: '2em', fontWeight:'bold', color: 'white'}}>Know Our Services</strong>
+              <strong style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', fontSize: '2em', fontWeight:'bold', color: 'white'}}>Hotels</strong>
             </h1>
             <p className="m-b-40" style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', fontSize: '1.3em', fontWeight:'bold'}}>
               
@@ -56,4 +56,4 @@ function BannerServices() {
     </>
   );
 }
-export default BannerServices;
+export default BannerHot;

@@ -41,7 +41,7 @@ function HomeScreen() {
 
           }}
         >
-          <Row style={{borderTop: '3px solid', borderBottom: '3px solid'}}>
+          <Row >
             
             <Col>
               <div data-aos="fade-right"

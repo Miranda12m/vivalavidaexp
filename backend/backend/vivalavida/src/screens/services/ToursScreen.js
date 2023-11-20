@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Tour from '../components/services/Tour';
+import Tour from '../../components/services/Tour';
 import { Container, Row, Col } from 'react-bootstrap';
-import BannerTour from '../components/services/banners';
+import BannerTour from '../../components/services/bannerservices/bannertour';
+
 function TourScreen() {
   const [tours, setTours] = useState([]);
 
@@ -26,9 +27,8 @@ function TourScreen() {
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <h1 data-aos="fade-right">Tours /////   RESTAURANTS  ///////    COWORK  ///////   HTEL  //////  LOCAL</h1>
+  
+      <h1 data-aos="fade-right">Tours</h1>
       <Row data-aos="zoom-in">
         {tours.map((tour) => (
           <Col key={tour.id} xs={12} sm={6} md={4} lg={4}>
