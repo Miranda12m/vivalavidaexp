@@ -10,7 +10,7 @@ import HomeScreen from "./screens/HomeScreen";
 import ContactScreen from "./screens/ContactScreen";
 import ServicesScreen from "./screens/ServicesScreen"
 import CoworkingsScreen from "./screens/services/CoworkingsScreen"; 
-import HotelScreen from "./screens/services/HotelsScreen";
+import HotelsScreen from "./screens/services/HotelsScreen";
 import LocalConsumesScreen from "./screens/services/LocalConsumesScreen";
 import RestaurantScreen from "./screens/services/RestaurantsScreen";
 import TourScreen from "./screens/services/ToursScreen";
@@ -39,7 +39,7 @@ function App() {
           <Route path="/contact" element={<ContactScreen />} />
           <Route path="/services" element={<ServicesScreen />} />
           <Route path="/coworking" element={<CoworkingsScreen />} />
-          <Route path="/hotels" element={<HotelScreen />} />
+          <Route path="/hotels" element={<HotelsScreen />} />
           <Route path="/local-consume" element={<LocalConsumesScreen /> } />
           <Route path="/restaurants" element={<RestaurantScreen />} />
           <Route path="/tours" element={<TourScreen />} />
