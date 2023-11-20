@@ -28,6 +28,7 @@ function TourScreen() {
 
 
       <h1 data-aos="fade-right" style={{ borderBottom: '1px solid #2f2f2f', marginBottom: '15px' }}><strong>Tours</strong></h1>
+      <br></br>
       <Row data-aos="zoom-in">
         {tours.map((tour) => (
           <Col key={tour.id} xs={12} sm={6} md={4} lg={4}>

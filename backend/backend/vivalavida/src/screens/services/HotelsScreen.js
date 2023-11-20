@@ -28,13 +28,11 @@ function HotelsScreen() {
         data-aos="fade-right"
         style={{ borderBottom: "1px solid #2f2f2f", marginBottom: "15px" }}
       >
-        <strong>Explore Our Hotels</strong>
+        <strong>Hotels</strong>
       </h1>
-      <br />
       <br />
 
       {/* Hotels Section */}
-      <h2 data-aos="fade-right">Hotels</h2>
       <Row data-aos="zoom-in">
         {hotels.map((hotels) => (
           <Col key={hotels.id} xs={12} sm={6} md={4} lg={4}>
