@@ -38,25 +38,14 @@ function ServicesScreen() {
         <br />
 
         {/* Tours Section */}
+        <h2>Tours</h2>
         <Row data-aos="zoom-in">
-          <h2>Tours</h2>
-          {tours.length > 0 &&
-            tours.slice(0, showAllTours ? tours.length : 4).map((tour) => (
-              <Col key={tour.id} xs={12} sm={6} md={4} lg={4}>
-                <Tour tour={tour} />
-              </Col>
-            ))}
-          {tours.length > 4 && (
-            <Col xs={12}>
-              <button onClick={() => {
-                setShowAllTours(!showAllTours);
-                navigate.push('/services/tours'); // Reemplaza con tu ruta correcta
-              }}>
-                Ver más Tours
-              </button>
-            </Col>
-          )}
-        </Row>
+        {tours.map((tour) => (
+          <Col key={tour.id} xs={12} sm={6} md={4} lg={4}>
+            <Tour tour={tour} />
+          </Col>
+        ))}
+      </Row>
 
         <br />
         <br />
