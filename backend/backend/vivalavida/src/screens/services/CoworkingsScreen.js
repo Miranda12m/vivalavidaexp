@@ -26,15 +26,17 @@ function CoworkingsScreen() {
       <br />
       <br />
       <br />
-
-      <h1 data-aos="fade-right">Coworkings</h1>
-      <Row data-aos="zoom-in">
-        {coworkings.map((coworking) => (
-          <Col key={coworking.id} xs={12} sm={6} md={4} lg={4}>
-            <Coworking coworking={coworking} />
-          </Col>
-        ))}
-      </Row>
+      <h1 data-aos="fade-right" style={{ borderBottom: '1px solid #2f2f2f', marginBottom: '15px' }}><strong>Coworking</strong></h1>
+        <br></br>
+        <Row data-aos="zoom-in">
+          {coworkings
+            .sort((a, b) => b.id - a.id) // Cambiado el orden de la comparación por el ID
+            .map((coworking) => (
+              <div key={coworking.id}>
+                <Coworking coworking={coworking} />
+              </div>
+            ))}
+        </Row>
     </Container>
     </>
   );

@@ -28,14 +28,16 @@ function LocalConsumesScreen() {
       <br />
       <br />
 
-      <h1 data-aos="fade-right">Local Consume</h1>
+      <h1 data-aos="fade-right" style={{ borderBottom: '1px solid #2f2f2f', marginBottom: '15px' }}><strong>Local Consume</strong></h1>
       <Row data-aos="zoom-in">
-        {localconsumes.map((localconsume) => (
-          <Col key={localconsume.id} xs={12} sm={6} md={4} lg={4}>
-            <LocalConsume localconsume={localconsume} />
-          </Col>
-        ))}
-      </Row>
+          {localconsumes
+            .sort((a, b) => b.id - a.id) // Cambiado el orden de la comparación por el ID
+            .map((localconsume) => (
+              <div key={localconsume.id}>
+                <LocalConsume restaurant={localconsume} />
+              </div>
+            ))}
+        </Row>
     </Container>
     </>
   );
