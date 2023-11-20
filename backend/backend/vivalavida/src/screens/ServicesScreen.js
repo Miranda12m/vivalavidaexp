@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import Tour from '../components/services/Tour';
-import { Container, Row, Col } from 'react-bootstrap';
-import BannerServices from '../components/services/banners';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import Tour from "../components/services/Tour";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import BannerServices from "../components/services/banners";
 
 function ServicesScreen() {
   const [tours, setTours] = useState([]);
@@ -10,10 +10,10 @@ function ServicesScreen() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const toursResponse = await axios.get('/tours/api/v1/tours/');
+        const toursResponse = await axios.get("/tours/api/v1/tours/");
         setTours(toursResponse.data);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
 
@@ -28,7 +28,12 @@ function ServicesScreen() {
         <br />
         <br />
 
-        <h1 data-aos="fade-right" style={{borderBottom:'1px solid #2f2f2f', marginBottom:'15px'}}><strong>Know About Our Services</strong></h1>
+        <h1
+          data-aos="fade-right"
+          style={{ borderBottom: "1px solid #2f2f2f", marginBottom: "15px" }}
+        >
+          <strong>Know About Our Services</strong>
+        </h1>
         <br />
         <br />
 
@@ -42,8 +47,14 @@ function ServicesScreen() {
           ))}
         </Row>
         <br />
-        <h1 data-aos="fade-right" style={{borderBottom:'1px solid #2f2f2f', marginBottom:'15px'}}><strong>Our Recomendations</strong></h1>
+        <h1
+          data-aos="fade-right"
+          style={{ borderBottom: "1px solid #2f2f2f", marginBottom: "15px" }}
+        >
+          <strong>Our Recomendations</strong>
+        </h1>
         <br />
+        
         <br />
       </Container>
     </>
