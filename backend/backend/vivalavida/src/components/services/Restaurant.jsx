@@ -30,7 +30,7 @@ function Restaurant({ restaurant }) {
                 `}
       </style>
       <div style={{borderBottom:'1px solid #2f2f2f'}}>
-        <h2 style={{marginTop:'15px'}}><strong>{restaurant.title}</strong></h2>
+        <h2><strong>{restaurant.title}</strong></h2>
         <p style={{marginLet:'20%', marginRight:'20%'}}> {restaurant.description}</p>
         <Row style={{marginTop:'5%', marginBottom:'5%', marginLeft:'10%', marginRight:'10%', verticalAlign: 'center', margin: 'auto', alignSelf: 'center'}}>
           <Col>
