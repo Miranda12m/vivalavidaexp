@@ -3,7 +3,9 @@ import axios from "axios";
 import Tour from "../components/services/Tour";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import BannerServices from "../components/services/banners";
-
+import Recomendation from "../components/Recomendation";
+import { Link } from "react-router-dom";
+import Navbars from "../components/services/navbars";
 function ServicesScreen() {
   const [tours, setTours] = useState([]);
 
@@ -23,10 +25,10 @@ function ServicesScreen() {
   return (
     <>
       <BannerServices />
+      <Navbars />
       <Container>
-        <br />
-        <br />
-        <br />
+
+
 
         <h1
           data-aos="fade-right"
@@ -38,7 +40,7 @@ function ServicesScreen() {
         <br />
 
         {/* Tours Section */}
-        <h2>Tours</h2>
+        <h2  data-aos="fade-right" >Tours</h2>
         <Row data-aos="zoom-in">
           {tours.map((tour) => (
             <Col key={tour.id} xs={12} sm={6} md={4} lg={4}>
@@ -54,7 +56,7 @@ function ServicesScreen() {
           <strong>Our Recomendations</strong>
         </h1>
         <br />
-        
+        <Recomendation />
         <br />
       </Container>
     </>

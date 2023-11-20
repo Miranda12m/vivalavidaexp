@@ -3,6 +3,9 @@ import axios from 'axios';
 import { Container, Row, Col } from 'react-bootstrap';
 import BannerHot from '../../components/services/bannerservices/bannerhot';
 import Hotels from '../../components/services/Hotels';
+import Navbars from '../../components/services/navbars';
+
+
 function HotelScreen() {
   const [hotels, setHotels] = useState([]);
 
@@ -22,10 +25,10 @@ function HotelScreen() {
   return (
     <>
     <BannerHot />
+    <Navbars />
+
     <Container>
-      <br />
-      <br />
-      <br />
+
       <h1 data-aos="fade-right" style={{ borderBottom: '1px solid #2f2f2f', marginBottom: '15px' }}><strong>Hotels</strong></h1>
         <br></br>
         <Row data-aos="zoom-in">

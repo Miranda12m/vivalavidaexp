@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Container, Row, Col } from 'react-bootstrap';
 import BannerLoc from '../../components/services/bannerservices/bannerloc';
 import LocalConsume from '../../components/services/LocalConsume';
+import Navbars from '../../components/services/navbars';
+
 
 function LocalConsumesScreen() {
   const [localconsumes, setLocalconsumes] = useState([]);
@@ -23,10 +25,10 @@ function LocalConsumesScreen() {
   return (
     <>
     <BannerLoc />
+    <Navbars />
+
     <Container>
-      <br />
-      <br />
-      <br />
+  
 
       <h1 data-aos="fade-right" style={{ borderBottom: '1px solid #2f2f2f', marginBottom: '15px' }}><strong>Local Consume</strong></h1>
       <Row data-aos="zoom-in">

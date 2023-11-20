@@ -74,28 +74,28 @@ function Footer() {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="/about-us">
+                                            <Link to="/contact">
                                                 About Us
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="/tour">
+                                            <Link to="/services">
+                                                Services
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/tours">
                                                 Tours
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="/termsandconditions">
-                                                Terms and Conditions
+                                            <Link to="/restaurants">
+                                                Restaurants
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="/our-work">
-                                                Our Work
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/privacypolicy">
-                                                Privacy Policy
+                                            <Link to="/hotels">
+                                                Hotels
                                             </Link>
                                         </li>
 
@@ -132,7 +132,7 @@ function Footer() {
                                         <li><a href="/">Home</a></li>
                                         <li><a href="/#/terms-and-conditions">Terms and Conditions</a></li>
                                         <li><a href="/#/privacy-policy">Privacy Policies</a></li>
-                                        <li><a href="mailto:contact@weblessproject.com" target="_blank">Contact</a></li>
+                                        <li><a href="/#/contact" >Contact</a></li>
                                     </ul>
                                 </div>
                             </div>

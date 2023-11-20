@@ -1,7 +1,8 @@
 import React from "react";
 import { Col } from "react-bootstrap";
-function Alianzas() {
+import { Link } from "react-router-dom";
 
+function Navbars() {
     return (
         <>
             <style>
@@ -77,17 +78,39 @@ function Alianzas() {
     transform: rotate(360deg);
   }
 }
-
+.linksns{
+    color:white;
+}
+.linksns:hover{
+    color: orange;
+}
                 `}
             </style>
             <div data-aos="fade-right">
                 <div class="site-footer-top-top">
                     <div class="container">
-                        <div class="row" style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
+                        <div class="row" style={{ alignItems: 'center', display: 'flex', justifyContent: 'center', fontSize:'20px'}}>
+                        <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
+                                <Link to='/services' className="linksns" >All Services</Link>
+                            </Col>
+                            <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
+                                <Link to='/tours' className="linksns" >Tours</Link>
+                            </Col>
 
-                            <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>Coca Cola</Col>
-                            <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>Trivago</Col>
-                            <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>Webless</Col>
+                            <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
+                                <Link to='/restaurants' className="linksns">Restaurants</Link>
+                            </Col>
+
+                            <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
+                                <Link to='/hotels' className="linksns">Hotels</Link>
+                            </Col>
+                            
+                            <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
+                                <Link to='/coworking' className="linksns">Coworking</Link>
+                            </Col>
+                            <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
+                                <Link to='/local-consume' className="linksns">Local Consume</Link>
+                            </Col>
                         </div>
                     </div>
                 </div>
@@ -96,4 +119,4 @@ function Alianzas() {
         </>
     );
 }
-export default Alianzas;
+export default Navbars;

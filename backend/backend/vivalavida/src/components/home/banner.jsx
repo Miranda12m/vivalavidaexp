@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBCarousel, MDBCarouselItem } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
 export default function App() {
   return (
@@ -54,7 +55,9 @@ export default function App() {
             </p>
             <br></br>
             <p>
+              <Link to="/services">
               <button type="button" className="btn btn-success">Book your adventure now!</button>
+              </Link>
             </p>
           </div>
         </div>

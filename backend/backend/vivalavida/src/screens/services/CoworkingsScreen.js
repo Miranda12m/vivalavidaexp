@@ -3,6 +3,9 @@ import axios from 'axios';
 import { Container, Row, Col } from 'react-bootstrap';
 import BannerCow from '../../components/services/bannerservices/bannercow';
 import Coworking from '../../components/services/Coworking';
+import Navbars from '../../components/services/navbars';
+
+
 function CoworkingsScreen() {
   const [coworkings, setCoworkings] = useState([]);
 
@@ -22,10 +25,8 @@ function CoworkingsScreen() {
   return (
     <>
     <BannerCow />
+    <Navbars />
     <Container>
-      <br />
-      <br />
-      <br />
       <h1 data-aos="fade-right" style={{ borderBottom: '1px solid #2f2f2f', marginBottom: '15px' }}><strong>Coworking</strong></h1>
         <br></br>
         <Row data-aos="zoom-in">

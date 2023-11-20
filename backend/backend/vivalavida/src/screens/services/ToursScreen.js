@@ -3,7 +3,7 @@ import axios from 'axios';
 import Tour from '../../components/services/Tour';
 import { Container, Row, Col } from 'react-bootstrap';
 import BannerTour from '../../components/services/bannerservices/bannertour';
-
+import Navbars from '../../components/services/navbars';
 function TourScreen() {
   const [tours, setTours] = useState([]);
 
@@ -23,12 +23,11 @@ function TourScreen() {
   return (
     <>
     <BannerTour />
+    <Navbars />
     <Container>
-      <br />
-      <br />
-      <br />
-  
-      <h1 data-aos="fade-right">Tours</h1>
+
+
+      <h1 data-aos="fade-right" style={{ borderBottom: '1px solid #2f2f2f', marginBottom: '15px' }}><strong>Tours</strong></h1>
       <Row data-aos="zoom-in">
         {tours.map((tour) => (
           <Col key={tour.id} xs={12} sm={6} md={4} lg={4}>
