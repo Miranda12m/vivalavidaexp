@@ -54,8 +54,9 @@ function Restaurant({ restaurant }) {
           <Link to={restaurant.socials}>
             <button className="btn btn-primary button-hover" type="button" style={{ display: 'block', margin: 'auto' }}>See more</button>
           </Link>
+          <br />
         </div>
-        <br />
+        
 
 
     </>
