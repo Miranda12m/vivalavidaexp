@@ -42,6 +42,7 @@ function ServicesScreen() {
           ))}
         </Row>
         <br />
+        <h1 data-aos="fade-right" style={{borderBottom:'1px solid #2f2f2f', marginBottom:'15px'}}><strong>Our Recomendations</strong></h1>
         <br />
       </Container>
     </>
