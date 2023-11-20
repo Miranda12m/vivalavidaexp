@@ -16,7 +16,7 @@ function HotelsScreen() {
     };
 
     fetchData();
-  }, []); // Empty dependency array to run the effect only once on mount
+  }, []); // Eldiablo
 
   return (
     <Container>
