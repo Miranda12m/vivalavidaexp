@@ -2,15 +2,10 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Tour from '../components/services/Tour';
 import { Container, Row, Col } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom'; 
 import BannerServices from '../components/services/banners';
 
 function ServicesScreen() {
   const [tours, setTours] = useState([]);
-
-  const [showAllTours, setShowAllTours] = useState(false);
-
-  const navigate = useNavigate(); 
 
   useEffect(() => {
     const fetchData = async () => {
