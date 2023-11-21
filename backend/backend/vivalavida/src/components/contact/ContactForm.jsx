@@ -15,13 +15,28 @@ function ContactForm() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Aquí puedes enviar los datos a tu servidor o realizar otras acciones necesarias
-    console.log('Datos enviados:', formData);
+    try {
+      const response = await fetch('/tours/api/v1/form/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Reiniciar el formulario
+      if (response.ok) {
+        console.log('Form data successfully sent!');
+      } else {
+        console.error('Error sending form data:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Error sending form data:', error.message);
+    }
+
+    // Reset the form
     setFormData({
       name: '',
       email: '',
@@ -33,18 +48,17 @@ function ContactForm() {
     <>
       <style>
         {`
-                  .button-hover:hover {
-                      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-                      transform: scale(1.02);
-                      transition: all 0.2s ease-in-out;
-                  }
-                `}
+          .button-hover:hover {
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            transform: scale(1.02);
+            transition: all 0.2s ease-in-out;
+          }
+        `}
       </style>
       <div className='card' style={{borderBlockStartColor:'#cf6a00', borderBlockStartWidth: '5px', borderRadius:'1.2%',transform: 'translate(0%, -10%)', boxShadow:' 0px 0px 15px rgba(0, 0, 0, 0.3)' }}>
-      
         <form onSubmit={handleSubmit} style={{ maxWidth: '1200px', marginLeft:'45px', marginRight:'45px' }}>
-        <br></br><br></br>
-          <div className="row mb-3" >
+          <br></br><br></br>
+          <div className="row mb-3">
             <div data-aos="fade-right" className="form-group col-md-6" style={{ marginBottom: '3%'}}>
               <label htmlFor="name" className="form-label">
                 Name:
@@ -72,12 +86,12 @@ function ContactForm() {
                 className="form-control"
                 placeholder="Enter your email"
               />
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
           </div>
           <div data-aos="fade-up" className="form-group mb-3">
             <label htmlFor="message" className="form-label">
-            What's on your mind?
+              What's on your mind?
             </label>
             <textarea
               id="message"

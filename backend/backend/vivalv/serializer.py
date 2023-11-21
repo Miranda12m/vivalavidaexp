@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Tour, Restaurant, Coworking, LocalConsume, Hotels
+from .models import Tour, Restaurant, Coworking, LocalConsume, Hotels, Form
 
 class TourSerializer(serializers.ModelSerializer):
     class Meta:
@@ -24,5 +24,10 @@ class LocalConsumeSerializer(serializers.ModelSerializer):
 class HotelsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Hotels
+        fields = '__all__'
+
+class FormSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Form 
         fields = '__all__'
         

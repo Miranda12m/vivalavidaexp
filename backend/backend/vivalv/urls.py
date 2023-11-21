@@ -8,6 +8,7 @@ router.register(r'restaurants', views.RestaurantView, 'restaurants')
 router.register(r'coworkings', views.CoworkingView, 'coworkings')
 router.register(r'localconsumes', views.LocalConsumeView, 'localconsumes')
 router.register(r'hotels', views.HotelsView, 'hotels')
+router.register(r'form', views.FormView, 'form')
 
 urlpatterns = [
     path('api/v1/', include(router.urls))
