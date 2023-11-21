@@ -61,7 +61,7 @@ function Recomendation() {
                                             Some quick example text to build on the card title and make up the bulk of the card's content.
                                         </MDBCardText>
                                         <div style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
-                                            <button onClick={() => window.location.href = '/contact'} className="btn btn-primary button-hover" type="button" style={{ verticalAlign: 'center', margin: 'auto', alignSelf: 'center' }}>See more</button>
+                                            <button className="btn btn-primary button-hover" type="button" style={{ verticalAlign: 'center', margin: 'auto', alignSelf: 'center' }}>See more</button>
                                         </div>
                                     </MDBCardBody>
                                 </MDBCard>
