@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from .serializer import TourSerializer, RestaurantSerializer, CoworkingSerializer, LocalConsumeSerializer, HotelsSerializer
-from .models import Tour, Restaurant, Coworking, LocalConsume, Hotels
+from .serializer import TourSerializer, RestaurantSerializer, CoworkingSerializer, LocalConsumeSerializer, HotelsSerializer, FormSerializer
+from .models import Tour, Restaurant, Coworking, LocalConsume, Hotels, Form
 
 # Create your views here.
 
@@ -23,3 +23,7 @@ class LocalConsumeView(viewsets.ModelViewSet):
 class HotelsView(viewsets.ModelViewSet):
     serializer_class = HotelsSerializer
     queryset = Hotels.objects.all()
+
+class FormView(viewsets.ModelViewSet):
+    serializer_class = FormSerializer
+    queryset = Form.objects.all()
