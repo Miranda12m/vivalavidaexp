@@ -89,9 +89,9 @@ function Navbars() {
             <div data-aos="fade-right">
                 <div class="site-footer-top-top">
                     <div class="container">
-                        <div class="row" style={{ alignItems: 'center', display: 'flex', justifyContent: 'center', fontSize:'20px'}}>
+                        <div class="row" style={{ alignItems: 'center', display: 'flex', justifyContent: 'center', fontSize:'20px', textAlign:'center'}}>
                         <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
-                                <Link to='/services' className="linksns" >All Services</Link>
+                                <Link to='/services' className="linksns" >All </Link>
                             </Col>
                             <Col style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
                                 <Link to='/tours' className="linksns" >Tours</Link>
