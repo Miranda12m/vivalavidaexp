@@ -45,7 +45,7 @@ function BannerLoc() {
         <div className="row">
           <div className="col-md-12 text-white text-center" data-aos="fade-right">
             <h1 className="m-b-20" >
-              <strong style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', fontSize: '2em', fontWeight:'bold', color: 'white'}}>Local Consume</strong>
+              <strong style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', fontSize: '1.8em', fontWeight:'bold', color: 'white'}}>Local Consume</strong>
             </h1>
             <p className="m-b-40" style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', fontSize: '1.3em', fontWeight:'bold'}}>
               

@@ -72,6 +72,7 @@ function HotelsScreen() {
           </Row>
         </Link>
       </Container>
+      <br></br>
     </>
   );
 }

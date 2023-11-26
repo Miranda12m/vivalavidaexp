@@ -39,7 +39,7 @@ function LocalConsume({ localconsume}) {
           <div style={{ textAlign: 'center' }}>
             <img
               src={localconsume.image}
-              style={{ borderRadius: "1.2%", width: "75%", minWidth: '400px', objectFit: 'cover', height: '40vh', marginBottom: '30px', marginLeft: '30px', marginRight:'30px', boxShadow: '0px 0px 15px rgba(0, 0, 0, 0.3)' }}
+              style={{ borderRadius: "1.2%", width: "70%", minWidth: '310px', objectFit: 'cover', height: '40vh', marginBottom: '30px', marginLeft: '30px', marginRight:'30px', boxShadow: '0px 0px 15px rgba(0, 0, 0, 0.3)' }}
               alt={localconsume.title}
             />
           </div>

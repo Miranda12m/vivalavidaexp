@@ -17,7 +17,7 @@ function Wapp() {
     // Agrega lógica adicional si es necesario antes de abrir WhatsApp
     // ...
 
-    window.open('https://api.whatsapp.com/send?phone=529991059984', '_blank');
+    window.open('https://api.whatsapp.com/send?phone=525512003020', '_blank');
   };
 
   $(document).on("click", "#whatsapp-popup", function () {

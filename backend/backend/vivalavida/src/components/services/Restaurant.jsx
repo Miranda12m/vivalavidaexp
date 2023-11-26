@@ -38,7 +38,7 @@ function Restaurant({ restaurant }) {
           <div style={{ textAlign: 'center' }}>
             <img
               src={restaurant.image}
-              style={{ borderRadius: "1.2%", width: "75%", minWidth: '400px', objectFit: 'cover', height: '40vh', marginBottom: '30px', marginLeft: '30px', marginRight:'30px', boxShadow: '0px 0px 15px rgba(0, 0, 0, 0.3)' }}
+              style={{ borderRadius: "1.2%", width: "70%", minWidth: '310px', objectFit: 'cover', height: '40vh', marginBottom: '30px', marginLeft: '30px', marginRight:'30px', boxShadow: '0px 0px 15px rgba(0, 0, 0, 0.3)' }}
               alt={restaurant.title}
             />
           </div>
