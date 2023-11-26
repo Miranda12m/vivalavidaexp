@@ -6,7 +6,7 @@ function InstagramEmbed() {
   const [instaData, setInstaData] = useState([]);
 
   async function getInstaFeed() {
-    const token = 'IGQWRPRm9TaVl4VVc0M19IZA2ozRmE1bXJ2RUE2QnR0VzhlQm9FRDJfVEt0emlDUU1rTTlaQW9fUWh1Tm92d3g2b0lMSy1nd21adGo5R3BYYXlwbkFPNEw1VmwtVEIxVmM3SDQtZA2RmYUtnTi00RWZAkUmZAONDR5ODQZD';
+    const token = 'token';
     const fields = "caption,media_url,media_type,permalink,timestamp";
     const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=${fields}`;
 
